@@ -136,7 +136,20 @@ y que todas las rutas sean relativas. Si algo falla, te dice el archivo y la lí
 
 ### En GitHub Pages (recomendado)
 
-**La primera vez:**
+El sitio está publicado en **https://oscargtus.github.io/malayerba/** (repositorio `Oscargtus/malayerba`).
+Esta carpeta ya está conectada al repositorio, así que para publicar cambios basta con:
+
+```bash
+./tools/compilar.sh                                  # revisa que no haya enlaces rotos
+./tools/publicar.sh "Nuevo artículo: la ciudad"      # sube los cambios a GitHub
+```
+
+`publicar.sh` sube todo lo que cambió (artículos, fotos, textos) usando tu sesión de GitHub (`gh`).
+En 1–2 minutos el sitio se actualiza; si algo falla, mira la pestaña *Actions* del repositorio.
+
+Otras formas de subir cambios (sin Terminal):
+
+**Desde cero en otro repositorio (referencia):**
 
 1. Crea una cuenta en GitHub y un repositorio nuevo (por ejemplo `malayerba`).
 2. Sube **el contenido de esta carpeta** al repositorio. La forma más cómoda es la app gratuita **GitHub Desktop**:
@@ -150,7 +163,7 @@ y que todas las rutas sean relativas. Si algo falla, te dice el archivo y la lí
 4. En `_config.yml`, pon la dirección que te da GitHub en `url:` (p. ej. `https://usuario.github.io/malayerba`) y sube ese cambio.
    Hace falta para el RSS, el sitemap y las vistas previas al compartir en redes.
 
-**Cada vez que publiques algo nuevo** (artículo, fotos, cambios):
+**Subir cambios sin Terminal** (artículo, fotos, cambios):
 - Con GitHub Desktop: escribe un resumen (*Summary*), pulsa *Commit to main* y luego *Push origin*.
 - Con la web: entra en la carpeta correspondiente (`_posts/`, `assets/fotos/`…) y usa *Add file → Upload files*.
   Las fotos nuevas van a `assets/fotos/`; los placeholders reemplazados, a `assets/placeholders/`.
