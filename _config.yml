@@ -13,7 +13,7 @@ lang: es
 # y las vistas previas en redes. Ejemplos:
 #   url: "https://www.malayerba.com"
 #   url: "https://usuario.github.io/malayerba"
-url: ""
+url: "https://oscargtus.github.io/malayerba"
 # No se usa (todas las rutas son relativas). Déjalo vacío.
 baseurl: ""
 
