@@ -202,16 +202,20 @@ function initStickyHeader() {
 	if (!jQuery('#header').length) return;
 	var win = jQuery(window),
 		stickyClass = 'sticky',
-		stickyTop = jQuery('#header').offset().top +200;
-	
+		// malayerba: el header es fijo arriba, así que el umbral es 200 px de scroll.
+		// (Antes se sumaba la posición de scroll al cargar, y al recargar a mitad de página
+		// el menú tardaba en ponerse negro.)
+		stickyTop = 200;
 
-	jQuery(window).on( 'scroll', function(){
+	function actualizarMenuFijo() {
 		if (jQuery(window).scrollTop() >= stickyTop) {
 			jQuery('#header').addClass('movetop');
 		} else {
 			jQuery('#header').removeClass('movetop');
 		}
-	});
+	}
+	actualizarMenuFijo();
+	jQuery(window).on('scroll', actualizarMenuFijo);
 
 	jQuery('#header').css({'height': jQuery('#header').innerHeight()});
 	jQuery(window).resize( function(){
