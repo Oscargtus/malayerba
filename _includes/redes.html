@@ -1,6 +1,12 @@
-{%- comment -%} Lista de redes de _data/redes.yml. Parámetros: clase (opcional), icono_clase (opcional, p. ej. "icon ") {%- endcomment -%}
+{%- comment -%}
+  Lista de redes de _data/redes.yml (solo las que tienen url).
+  Parámetros: clase (opcional), icono_clase (opcional, p. ej. "icon ")
+{%- endcomment -%}
+{%- assign redes_activas = site.data.redes | where_exp: "r", "r.url != ''" -%}
+{%- if redes_activas.size > 0 %}
 <ul class="social-networks{% if include.clase %} {{ include.clase }}{% endif %}">
-{%- for red in site.data.redes %}
+{%- for red in redes_activas %}
 	<li><a href="{{ red.url }}" aria-label="{{ red.nombre }}"><span class="{{ include.icono_clase }}ico-{{ red.icono }}"></span></a></li>
 {%- endfor %}
 </ul>
+{%- endif %}

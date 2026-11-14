@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+  <!-- Placeholder del logo de malayerba. Reemplaza este archivo por tu logo en SVG con el mismo nombre. -->
+  <rect width="160" height="160" rx="12" fill="#cfcfcf"/>
+  <rect x="3" y="3" width="154" height="154" rx="10" fill="none" stroke="#9a9a9a" stroke-width="3" stroke-dasharray="10 6"/>
+  <text x="80" y="76" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700" fill="#555">IMG-LOGO-01</text>
+  <text x="80" y="102" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#555">160×160</text>
+</svg>

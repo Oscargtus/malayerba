@@ -5,7 +5,7 @@
 			<div class="slideset">
 			{%- for item in site.data.galeria %}
 				<div class="slide">
-					<a href="{{ item.enlace }}"><img src="{{ item.imagen }}" alt="" width="275" height="240" loading="lazy" decoding="async"></a>
+					{% if item.enlace and item.enlace != "" %}<a href="{{ item.enlace }}">{% endif %}<img src="{{ item.imagen }}" alt="" width="275" height="240" loading="lazy" decoding="async">{% if item.enlace and item.enlace != "" %}</a>{% endif %}
 				</div>
 			{%- endfor %}
 			</div>

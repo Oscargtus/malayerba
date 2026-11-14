@@ -11,14 +11,14 @@
 title: "Título del artículo"
 categoria: "1"                 # id de _data/categorias.yml
 autor: autor-1                 # id de _data/autores.yml
-imagen: assets/placeholders/IMG-POST-01.jpg   # proporción 3:2, ideal 1200×800
+imagen: assets/fotos/mi-foto.jpg   # proporción 3:2, ideal 1200×800 (crea la carpeta assets/fotos/)
 imagen_alt: "Qué se ve en la imagen (para personas con lector de pantalla)"
 extracto: "Dos o tres líneas que resumen el artículo (portada, buscadores y redes)."
 etiquetas: [etiqueta, otra etiqueta]
 
 # --- Opcional: portada ---
 # destacado: true                                    # aparece en el slideshow de la portada
-# imagen_portada: assets/placeholders/IMG-HERO-01.jpg  # 1920×845
+# imagen_portada: assets/fotos/mi-portada.jpg       # 1920×845
 
 # --- Opcional: video (se abre en ventana al hacer clic en la imagen) ---
 # formato: video
@@ -26,8 +26,8 @@ etiquetas: [etiqueta, otra etiqueta]
 
 # --- Opcional: galería de fotos en lugar de una imagen ---
 # galeria:
-#   - assets/placeholders/IMG-POST-10.jpg
-#   - assets/placeholders/IMG-POST-11.jpg
+#   - assets/fotos/foto-1.jpg
+#   - assets/fotos/foto-2.jpg
 ---
 
 Primer párrafo del artículo.
@@ -38,4 +38,4 @@ Texto con **negritas**, *cursivas* y [enlaces](archivo.html).
 
 > Una cita destacada.
 
-![Descripción de la imagen](assets/placeholders/IMG-POST-02.jpg)
+![Descripción de la imagen](assets/fotos/mi-foto.jpg)

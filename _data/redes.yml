@@ -1,19 +1,19 @@
 # Redes sociales (se muestran en header, pie, perfil y contacto).
-# Cambia "url" por el enlace real. Borra un bloque para ocultar esa red.
+# Pon en "url" el enlace real. Mientras "url" esté vacío, ese ícono NO se muestra.
 # icono: facebook, twitter, linkedin, pinterest (íconos incluidos en la plantilla)
 
 - nombre: Facebook
   icono: facebook
-  url: proximamente.html
+  url: ""
 
 - nombre: Twitter / X
   icono: twitter
-  url: proximamente.html
+  url: ""
 
 - nombre: LinkedIn
   icono: linkedin
-  url: proximamente.html
+  url: ""
 
 - nombre: Pinterest
   icono: pinterest
-  url: proximamente.html
+  url: ""

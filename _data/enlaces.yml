@@ -1,12 +1,7 @@
-# Enlaces del pie de página ("Enlaces importantes") y de la barra superior.
+# Enlaces del pie de página ("Enlaces importantes").
+# Cuando tengas páginas legales (privacidad, aviso legal), añádelas aquí.
 
 - titulo: Sobre nosotros
   url: sobre-nosotros.html
 - titulo: Contacto
   url: contacto.html
-- titulo: Política de privacidad
-  url: proximamente.html
-- titulo: Aviso legal
-  url: proximamente.html
-- titulo: RSS
-  url: feed.xml
