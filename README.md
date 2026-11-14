@@ -1,2 +1,2 @@
 # malayerba
-The FP Digital Magazine by Plantopia
+The FP Digital Magazine by Plantopia.
