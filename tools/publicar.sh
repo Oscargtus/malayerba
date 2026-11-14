@@ -16,5 +16,8 @@ echo "Cambios que se van a publicar:"
 git status --short
 git add -A
 git commit -q -m "$MENSAJE"
-git -c credential.helper= -c 'credential.helper=!gh auth git-credential' push -q
+GH=(-c credential.helper= -c 'credential.helper=!gh auth git-credential')
+# trae primero lo que se haya cambiado en la web de GitHub
+git "${GH[@]}" pull -q --rebase
+git "${GH[@]}" push -q
 echo "Publicado. En 1–2 minutos estará en https://oscargtus.github.io/malayerba/"

@@ -147,28 +147,9 @@ Esta carpeta ya está conectada al repositorio, así que para publicar cambios b
 `publicar.sh` sube todo lo que cambió (artículos, fotos, textos) usando tu sesión de GitHub (`gh`).
 En 1–2 minutos el sitio se actualiza; si algo falla, mira la pestaña *Actions* del repositorio.
 
-Otras formas de subir cambios (sin Terminal):
-
-**Desde cero en otro repositorio (referencia):**
-
-1. Crea una cuenta en GitHub y un repositorio nuevo (por ejemplo `malayerba`).
-2. Sube **el contenido de esta carpeta** al repositorio. La forma más cómoda es la app gratuita **GitHub Desktop**:
-   *File → Add Local Repository* → elige `malayerba-jekyll` → *Publish repository*.
-   GitHub Desktop respeta el archivo `.gitignore`, que deja fuera `_site/`, `vendor/` y `.jekyll-cache/`.
-   - Si prefieres la web de GitHub: ejecuta `./tools/preparar-subida.sh`. Crea `../malayerba-para-github/` con una copia
-     limpia (sin `_site/` ni `vendor/`) en dos lotes, porque la web acepta hasta 100 archivos por vez.
-     En el repositorio: *Add file → Upload files*, abre `1-primero` en el Finder, selecciona todo (`Cmd + A`),
-     arrástralo a la página y pulsa *Commit changes*. Repite con el contenido de `2-despues`.
-3. En el repositorio: *Settings → Pages → Build and deployment → Source: Deploy from a branch* → rama `main`, carpeta `/ (root)` → *Save*.
-4. En `_config.yml`, pon la dirección que te da GitHub en `url:` (p. ej. `https://usuario.github.io/malayerba`) y sube ese cambio.
-   Hace falta para el RSS, el sitemap y las vistas previas al compartir en redes.
-
-**Subir cambios sin Terminal** (artículo, fotos, cambios):
-- Con GitHub Desktop: escribe un resumen (*Summary*), pulsa *Commit to main* y luego *Push origin*.
-- Con la web: entra en la carpeta correspondiente (`_posts/`, `assets/fotos/`…) y usa *Add file → Upload files*.
-  Las fotos nuevas van a `assets/fotos/`; los placeholders reemplazados, a `assets/placeholders/`.
-
-GitHub vuelve a compilar el sitio en 1–2 minutos (puedes verlo en la pestaña *Actions*).
+**Sin Terminal** (para un cambio puntual): en la web del repositorio entra en la carpeta correspondiente
+(`_posts/`, `assets/fotos/`, `assets/placeholders/`…), usa *Add file → Upload files* y pulsa *Commit changes*.
+`publicar.sh` trae esos cambios de la web automáticamente antes de subir los tuyos.
 
 ### En un hosting propio (FTP)
 
