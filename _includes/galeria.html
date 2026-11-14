@@ -1,0 +1,14 @@
+{%- comment -%} Franja de imágenes antes del pie: se edita en _data/galeria.yml {%- endcomment -%}
+<div class="instagram-slider{% if include.interior %} version-ii{% endif %} container-fluid">
+	<div class="row">
+		<div class="mask">
+			<div class="slideset">
+			{%- for item in site.data.galeria %}
+				<div class="slide">
+					<a href="{{ item.enlace }}"><img src="{{ item.imagen }}" alt="" width="275" height="240" loading="lazy" decoding="async"></a>
+				</div>
+			{%- endfor %}
+			</div>
+		</div>
+	</div>
+</div>

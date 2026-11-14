@@ -1,0 +1,46 @@
+---
+layout: base
+---
+{%- comment -%}
+  Páginas interiores: cabecera con título + columna de contenido + barra lateral.
+  Front matter: title, titulo_cabecera (opcional), imagen_cabecera (opcional)
+{%- endcomment -%}
+{%- assign titulo_cabecera = page.titulo_cabecera | default: page.title -%}
+{%- assign miga = page.miga -%}
+{%- assign miga_url = page.miga_url -%}
+{%- if page.layout == "articulo" -%}
+	{%- assign _cat = site.data.categorias | where: "id", page.categoria | first -%}
+	{%- assign titulo_cabecera = _cat.nombre | default: "Artículo" -%}
+	{%- if _cat %}{% assign miga = _cat.nombre %}{% capture miga_url %}categoria-{{ _cat.id }}.html{% endcapture %}{% endif -%}
+{%- elsif page.categoria -%}
+	{%- assign _cat = site.data.categorias | where: "id", page.categoria | first -%}
+	{%- assign titulo_cabecera = _cat.nombre -%}
+{%- endif -%}
+<header class="page-head wow fadeInUp" data-wow-delay="0.6s" style="background-image: url({{ page.imagen_cabecera | default: 'assets/placeholders/IMG-BG-01.jpg' }});">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				{%- if page.layout == "articulo" %}
+				<p class="h1">{{ titulo_cabecera }}</p>
+				{%- else %}
+				<h1>{{ titulo_cabecera }}</h1>
+				{%- endif %}
+				<ol class="breadcrumb">
+					<li><a href="index.html">Inicio</a></li>
+					{%- if miga_url %}
+					<li><a href="{{ miga_url }}">{{ miga }}</a></li>
+					{%- endif %}
+					<li class="active">{{ page.miga_final | default: page.title }}</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</header>
+<div id="twocolumns" class="container">
+	<div class="row">
+		<div id="content" class="col-xs-12 col-md-8">
+			{{ content }}
+		</div>
+		{% include barra-lateral.html %}
+	</div>
+</div>

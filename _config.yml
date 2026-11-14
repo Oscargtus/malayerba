@@ -1,0 +1,72 @@
+# ==========================================================
+#  malayerba – configuración del sitio
+#  Después de cambiar este archivo, reinicia la vista previa.
+# ==========================================================
+
+title: malayerba
+lema: Revista digital
+description: >-
+  malayerba, revista digital. Descripción breve de la revista para buscadores y redes sociales.
+lang: es
+
+# Dirección pública del sitio, SIN barra final. Hace falta para el RSS, el sitemap
+# y las vistas previas en redes. Ejemplos:
+#   url: "https://www.malayerba.com"
+#   url: "https://usuario.github.io/malayerba"
+url: ""
+# No se usa (todas las rutas son relativas). Déjalo vacío.
+baseurl: ""
+
+# Cuántos artículos se muestran en la portada (el resto queda en archivo.html)
+articulos_en_portada: 9
+
+# Texto del perfil de la revista (barra lateral y menú lateral)
+perfil:
+  titulo: Sobre la revista
+  nombre: malayerba
+  texto: Breve descripción de la revista. Texto de ejemplo para reemplazar.
+  imagen: assets/placeholders/IMG-AVATAR-01.jpg
+  imagen_menu_lateral: assets/placeholders/IMG-AVATAR-02.jpg
+
+# Texto del pie de página
+pie:
+  texto: Breve descripción de malayerba para el pie de página. Texto de ejemplo para reemplazar.
+
+# ---------- Ajustes técnicos (normalmente no hace falta tocarlos) ----------
+
+# Sin tema externo: el diseño está en este proyecto (style.css, _layouts, _includes)
+theme: null
+encoding: utf-8
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: articulo
+      # Los artículos quedan en la raíz del sitio (mi-articulo.html), igual que las páginas,
+      # para que las rutas relativas funcionen en GitHub Pages y en cualquier hosting.
+      permalink: /:title.html
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - tools
+  - LEEME.md
+  - IMAGENES.md
+  - README.md

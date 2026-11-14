@@ -1,0 +1,24 @@
+# Secciones (categorías) de la revista.
+# - id: el valor que pones en "categoria:" de cada artículo (sin espacios ni acentos)
+# - nombre: texto que se ve en el sitio
+# - descripcion: aparece en la página de la sección
+#
+# Para AÑADIR una sección:
+#   1. añade aquí un bloque nuevo (id, nombre, descripcion)
+#   2. copia categoria-1.html como categoria-<id>.html y cambia "categoria:" y "title:" dentro
+
+- id: "1"
+  nombre: Categoría 1
+  descripcion: Descripción breve de la categoría 1.
+
+- id: "2"
+  nombre: Categoría 2
+  descripcion: Descripción breve de la categoría 2.
+
+- id: "3"
+  nombre: Categoría 3
+  descripcion: Descripción breve de la categoría 3.
+
+- id: "4"
+  nombre: Categoría 4
+  descripcion: Descripción breve de la categoría 4.

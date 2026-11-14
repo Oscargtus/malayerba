@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{%- comment -%}
+  Estructura común de todas las páginas.
+  Opciones en el front matter de cada página:
+    portada: true      -> header transparente de la portada
+    sin_cabecera: true -> sin header (p. ej. próximamente)
+    sin_galeria: true  -> sin la franja de imágenes antes del pie
+    sin_pie: true      -> sin pie de página
+{%- endcomment %}
+<html lang="{{ site.lang }}">
+<head>
+	{%- if page.url == "/404.html" and site.url != "" and jekyll.environment == "production" %}
+	<base href="{{ site.url }}/">
+	{%- endif %}
+	{% include head.html %}
+</head>
+<body{% unless page.portada %} class="version-ii"{% endunless %}>
+	<a class="skip-link" href="#main">Saltar al contenido</a>
+	<div id="wrapper">
+	{%- if page.portada %}
+		{% include cabecera-portada.html %}
+		<main id="main" role="main">
+			{{ content }}
+			{% include galeria.html %}
+		</main>
+		{% include pie.html %}
+		<span id="back-top" class="fa fa-angle-up"></span>
+	{%- else %}
+		<div class="w1">
+			{%- unless page.sin_cabecera %}
+			{% include cabecera.html %}
+			{%- endunless %}
+			<main id="main" role="main">
+				{{ content }}
+				{%- unless page.sin_galeria %}
+				{% include galeria.html interior=true %}
+				{%- endunless %}
+			</main>
+			{%- unless page.sin_pie %}
+			{% include pie.html interior=true %}
+			{%- endunless %}
+			<span id="back-top" class="fa fa-angle-up"></span>
+		</div>
+	{%- endif %}
+	</div>
+	{% include scripts.html %}
+</body>
+</html>

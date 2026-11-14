@@ -1,0 +1,26 @@
+{%- comment -%} Menú principal: se edita en _data/menu.yml {%- endcomment -%}
+{%- assign actual = page.url | remove_first: "/" -%}
+{%- if actual == "" %}{% assign actual = "index.html" %}{% endif -%}
+<ul class="nav navbar-nav navbar-right">
+{%- for item in site.data.menu %}
+	{%- assign activo = false -%}
+	{%- if item.categorias -%}
+		{%- if actual contains "categoria-" %}{% assign activo = true %}{% endif -%}
+	{%- else -%}
+		{%- if item.url == actual %}{% assign activo = true %}{% endif -%}
+		{%- if page.layout == "articulo" and item.url == "archivo.html" %}{% assign activo = true %}{% endif -%}
+	{%- endif %}
+	<li{% if activo %} class="active"{% endif %}{% if item.categorias %} data-drop="drop-right"{% endif %}>
+		<a href="{{ item.url }}">{{ item.titulo }}</a>
+		{%- if item.categorias %}
+		<div class="drop">
+			<ul>
+			{%- for cat in site.data.categorias %}
+				<li><a href="categoria-{{ cat.id }}.html">{{ cat.nombre }}</a></li>
+			{%- endfor %}
+			</ul>
+		</div>
+		{%- endif %}
+	</li>
+{%- endfor %}
+</ul>

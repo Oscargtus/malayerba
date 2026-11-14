@@ -1,0 +1,6 @@
+{%- comment -%}
+  Etiqueta amarilla "fecha · sección" de las tarjetas y del artículo.
+  Uso: {% include etiqueta-fecha.html post=post corta=true %}
+{%- endcomment -%}
+{%- assign _cat = site.data.categorias | where: "id", include.post.categoria | first -%}
+<time datetime="{{ include.post.date | date: '%Y-%m-%d' }}"><a href="{% if _cat %}categoria-{{ _cat.id }}.html{% else %}archivo.html{% endif %}">{% include fecha.html fecha=include.post.date corta=include.corta %}{% if _cat %} · {{ _cat.nombre }}{% endif %}</a></time>

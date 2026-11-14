@@ -1,0 +1,17 @@
+{%- comment -%} Lista de artículos con miniatura (barra lateral). Parámetro: lista {%- endcomment -%}
+{%- assign limite = include.limite | default: 3 -%}
+<ul>
+{%- for post in include.lista limit: limite %}
+	<li>
+		<div class="alignleft">
+			<a href="{{ post.url | remove_first: '/' }}"><img class="miniatura" src="{{ post.imagen }}" alt="" width="75" height="75" loading="lazy" decoding="async"></a>
+		</div>
+		<div class="descr">
+			<h4><a href="{{ post.url | remove_first: '/' }}">{{ post.title }}</a></h4>
+			<span class="post-tag">
+				<time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include fecha.html fecha=post.date corta=true %}</time>
+			</span>
+		</div>
+	</li>
+{%- endfor %}
+</ul>

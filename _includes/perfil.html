@@ -1,0 +1,11 @@
+{%- comment -%} Widget de perfil de la revista. Parámetros: clase, imagen, ancho {%- endcomment -%}
+<section class="widget profile-widget {{ include.clase }}">
+	<div class="profile-pic">
+		<a href="sobre-nosotros.html">
+			<img src="{{ include.imagen | default: site.perfil.imagen }}" alt="" width="{{ include.ancho | default: 180 }}" height="{{ include.ancho | default: 180 }}" loading="lazy" decoding="async">
+		</a>
+	</div>
+	<h3><a href="sobre-nosotros.html">{{ site.perfil.nombre }}</a></h3>
+	<p>{{ site.perfil.texto }}</p>
+	{% include redes.html icono_clase="icon " clase=include.clase_redes %}
+</section>

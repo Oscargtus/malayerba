@@ -1,0 +1,12 @@
+# Enlaces del pie de página ("Enlaces importantes") y de la barra superior.
+
+- titulo: Sobre nosotros
+  url: sobre-nosotros.html
+- titulo: Contacto
+  url: contacto.html
+- titulo: Política de privacidad
+  url: proximamente.html
+- titulo: Aviso legal
+  url: proximamente.html
+- titulo: RSS
+  url: feed.xml

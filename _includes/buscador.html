@@ -1,0 +1,9 @@
+{%- comment -%} Buscador (funciona en el navegador, ver js/buscar.js). Parámetro: clase {%- endcomment -%}
+<div class="widget widget_search {{ include.clase }}">
+	<form method="get" class="search-form" action="#">
+		<fieldset>
+			<input type="search" name="q" placeholder="Buscar…" aria-label="Buscar en {{ site.title }}" autocomplete="off">
+			<button type="submit" class="ico-search" aria-label="Buscar"></button>
+		</fieldset>
+	</form>
+</div>

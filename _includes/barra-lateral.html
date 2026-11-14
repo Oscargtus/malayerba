@@ -1,0 +1,24 @@
+{%- comment -%} Barra lateral de las páginas interiores {%- endcomment -%}
+<aside id="sidebar" class="col-xs-12 col-md-4">
+	{% include perfil.html clase="version-ii hidden-sm hidden-xs wow fadeInUp" %}
+	{% include buscador.html clase="hidden-sm hidden-xs wow fadeInUp" %}
+	<section class="widget recent-posts-widget version-ii wow fadeInUp" data-wow-delay="0.4s">
+		<header class="tab-head">
+			<h3><a class="active" href="#tab1">Recientes</a></h3>
+			<h3><a href="#tab2">Destacados</a></h3>
+		</header>
+		<div class="tab-content">
+			<div id="tab1">
+				{% include miniaturas.html lista=site.posts limite=3 %}
+			</div>
+			<div id="tab2">
+				{%- assign destacados = site.posts | where: "destacado", true -%}
+				{% include miniaturas.html lista=destacados limite=3 %}
+			</div>
+		</div>
+	</section>
+	<div class="widget promo-widget wow fadeInUp" data-wow-delay="0.4s">
+		<a href="proximamente.html"><img src="assets/placeholders/IMG-BANNER-01.jpg" alt="Espacio publicitario" width="370" height="415" loading="lazy" decoding="async"></a>
+	</div>
+	{% include lista-categorias.html %}
+</aside>

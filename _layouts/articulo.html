@@ -1,0 +1,93 @@
+---
+layout: interior
+---
+{%- comment -%}
+  Plantilla de cada artículo (_posts/*.md). Front matter disponible:
+    title, categoria, autor, imagen, imagen_alt, extracto, etiquetas,
+    destacado, imagen_portada, formato (video), video, galeria
+{%- endcomment -%}
+{%- assign autor = site.data.autores | where: "id", page.autor | first -%}
+{%- assign palabras = content | number_of_words -%}
+{%- assign minutos = palabras | divided_by: 200 | plus: 1 -%}
+<article class="post-block single-post wow fadeInUp" data-wow-delay="0.4s">
+	<div class="post-holder">
+		{%- if page.formato == "video" and page.video %}
+		<div class="video-holder">
+			<a href="{{ page.video }}" class="ico-play lightbox fancybox.iframe" aria-label="Reproducir video"></a>
+			<img src="{{ page.imagen }}" alt="{{ page.imagen_alt }}" width="1200" height="800" decoding="async">
+		</div>
+		{%- elsif page.galeria %}
+		<ul class="list-unstyled carousel">
+			{%- for foto in page.galeria %}
+			<li><div class="slide"><img src="{{ foto }}" alt="" width="1200" height="800" decoding="async"></div></li>
+			{%- endfor %}
+		</ul>
+		{%- elsif page.imagen %}
+		<div class="img-holder">
+			<img src="{{ page.imagen }}" alt="{{ page.imagen_alt }}" width="1200" height="800" decoding="async">
+		</div>
+		{%- endif %}
+		{% include etiqueta-fecha.html post=page %}
+		<span class="lectura">{{ minutos }} min de lectura</span>
+		<h1 class="h2 titulo-articulo">{{ page.title }}</h1>
+		<div class="cuerpo-articulo">
+			{{ content }}
+		</div>
+		<footer>
+			{%- if autor %}
+			<strong class="text"><span class="icon ico-user"></span><a href="sobre-nosotros.html#{{ autor.id }}">{{ autor.nombre }}</a></strong>
+			{%- endif %}
+			{%- if page.etiquetas %}
+			<strong class="text"><span class="icon ico-tag"></span>Etiquetas: {{ page.etiquetas | join: ", " }}</strong>
+			{%- endif %}
+		</footer>
+	</div>
+</article>
+{%- if autor %}
+<div class="widget widget-block wow fadeInUp" data-wow-delay="0.4s" id="sobre-el-autor">
+	<div class="alignleft">
+		<a href="sobre-nosotros.html#{{ autor.id }}"><img src="{{ autor.foto }}" alt="" width="135" height="135" loading="lazy" decoding="async"></a>
+	</div>
+	<div class="text-holder">
+		<header>
+			<h2><a href="sobre-nosotros.html#{{ autor.id }}">{{ autor.nombre }}</a></h2>
+			{%- if autor.web and autor.web != "" %}
+			<span class="subtitle"><a href="{{ autor.web }}">{{ autor.web | remove_first: "https://" | remove_first: "http://" }}</a></span>
+			{%- endif %}
+		</header>
+		<p>{{ autor.bio }}</p>
+	</div>
+</div>
+{%- endif %}
+{%- assign relacionados = site.posts | where: "categoria", page.categoria | where_exp: "p", "p.url != page.url" -%}
+{%- if relacionados.size < 2 -%}
+	{%- assign relacionados = site.posts | where_exp: "p", "p.url != page.url" -%}
+{%- endif %}
+<section class="posts-blocks extra wow fadeInUp" data-wow-delay="0.4s">
+	<header class="header">
+		<h2>Artículos relacionados</h2>
+		<p>También te puede interesar</p>
+	</header>
+	{%- for post in relacionados limit: 2 %}
+	<div class="post-block single-post-block">
+		<div class="post-holder">
+			<div class="img-holder">
+				<a href="{{ post.url | remove_first: '/' }}"><img src="{{ post.imagen }}" alt="" width="1200" height="800" loading="lazy" decoding="async"></a>
+			</div>
+			{% include etiqueta-fecha.html post=post corta=true %}
+			<h2><a href="{{ post.url | remove_first: '/' }}">{{ post.title }}</a></h2>
+		</div>
+	</div>
+	{%- endfor %}
+</section>
+<nav role="navigation" class="navigation pagination" aria-label="Más artículos">
+	<div class="nav-links">
+		{%- if page.next %}
+		<a href="{{ page.next.url | remove_first: '/' }}" class="prev page-numbers">Más reciente</a>
+		{%- endif %}
+		<a href="archivo.html" class="page-numbers">Todos los artículos</a>
+		{%- if page.previous %}
+		<a href="{{ page.previous.url | remove_first: '/' }}" class="next page-numbers">Anterior</a>
+		{%- endif %}
+	</div>
+</nav>

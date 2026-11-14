@@ -1,0 +1,47 @@
+{%- comment -%} Header de las páginas interiores (barra superior + menú + panel lateral) {%- endcomment -%}
+<header id="header" class="version-ii">
+	<div class="container">
+		<div class="row top-bar">
+			<nav class="col-xs-12 col-sm-6 policy-nav">
+				<ul>
+				{%- for e in site.data.enlaces limit: 3 %}
+					<li><a href="{{ e.url }}">{{ e.titulo }}</a></li>
+				{%- endfor %}
+				</ul>
+			</nav>
+			<div class="col-xs-12 col-sm-6 pull-right hidden-xs">
+				{% include redes.html %}
+			</div>
+		</div>
+	</div>
+	<div class="stick-holder">
+		<div class="container">
+			<div class="row holder">
+				<div class="col-xs-3 col-sm-2">
+					{% include marca.html %}
+				</div>
+				<div class="col-xs-9 col-sm-10 nav-holder">
+					<nav id="nav" class="navbar navbar-default">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+								<span class="sr-only">Abrir menú</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<a href="#" class="pull-right icon-menu" aria-label="Abrir panel lateral"><span class="ico-menu"></span></a>
+						<div class="collapse navbar-collapse" id="menu-principal">
+							{% include menu.html %}
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="side-nav" aria-label="Panel lateral">
+		<a href="#" class="close" aria-label="Cerrar panel lateral"><i class="fa fa-times"></i></a>
+		<h2>{{ site.perfil.titulo }}</h2>
+		{% include perfil.html imagen=site.perfil.imagen_menu_lateral ancho=215 %}
+	</nav>
+</header>

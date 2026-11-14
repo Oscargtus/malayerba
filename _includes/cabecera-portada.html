@@ -1,0 +1,27 @@
+{%- comment -%} Header de la portada (va sobre el slideshow oscuro) {%- endcomment -%}
+<header id="header" class="version-i">
+	<div class="stick-holder">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3 col-sm-2">
+					{% include marca.html %}
+				</div>
+				<div class="col-xs-9 col-sm-10 nav-holder">
+					<nav id="nav" class="navbar navbar-default">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false">
+								<span class="sr-only">Abrir menú</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="collapse navbar-collapse" id="menu-principal">
+							{% include menu.html %}
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

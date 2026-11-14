@@ -1,0 +1,21 @@
+# Franja de imágenes antes del pie (carrusel automático).
+# imagen: ideal 275×240. enlace: a dónde lleva al hacer clic.
+
+- imagen: assets/placeholders/IMG-GALLERY-01.jpg
+  enlace: proximamente.html
+- imagen: assets/placeholders/IMG-GALLERY-02.jpg
+  enlace: proximamente.html
+- imagen: assets/placeholders/IMG-GALLERY-03.jpg
+  enlace: proximamente.html
+- imagen: assets/placeholders/IMG-GALLERY-04.jpg
+  enlace: proximamente.html
+- imagen: assets/placeholders/IMG-GALLERY-05.jpg
+  enlace: proximamente.html
+- imagen: assets/placeholders/IMG-GALLERY-06.jpg
+  enlace: proximamente.html
+- imagen: assets/placeholders/IMG-GALLERY-07.jpg
+  enlace: proximamente.html
+- imagen: assets/placeholders/IMG-GALLERY-08.jpg
+  enlace: proximamente.html
+- imagen: assets/placeholders/IMG-GALLERY-09.jpg
+  enlace: proximamente.html

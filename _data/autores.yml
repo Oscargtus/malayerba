@@ -1,0 +1,14 @@
+# Autores y autoras. En cada artículo, "autor:" usa el id de aquí.
+# foto: cuadrada (ideal 270×270). web: opcional.
+
+- id: autor-1
+  nombre: Nombre del autor
+  bio: Breve biografía del autor. Texto de ejemplo para reemplazar.
+  foto: assets/placeholders/IMG-AVATAR-03.jpg
+  web: ""
+
+- id: autor-2
+  nombre: Nombre de la autora
+  bio: Breve biografía de la autora. Texto de ejemplo para reemplazar.
+  foto: assets/placeholders/IMG-AVATAR-04.jpg
+  web: ""

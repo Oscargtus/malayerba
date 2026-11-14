@@ -1,0 +1,6 @@
+{%- comment -%} Lista de redes de _data/redes.yml. Parámetros: clase (opcional), icono_clase (opcional, p. ej. "icon ") {%- endcomment -%}
+<ul class="social-networks{% if include.clase %} {{ include.clase }}{% endif %}">
+{%- for red in site.data.redes %}
+	<li><a href="{{ red.url }}" aria-label="{{ red.nombre }}"><span class="{{ include.icono_clase }}ico-{{ red.icono }}"></span></a></li>
+{%- endfor %}
+</ul>

@@ -1,0 +1,15 @@
+{%- comment -%} Widget con las secciones y su número de artículos {%- endcomment -%}
+<div class="widget widget_categories tabs wow fadeInUp" data-wow-delay="0.4s">
+	<header class="widget-head">
+		<h3>Secciones</h3>
+		<p>Explora la revista por temas</p>
+	</header>
+	<div class="lists-holder">
+		<ul>
+		{%- for cat in site.data.categorias %}
+			{%- assign n = site.posts | where: "categoria", cat.id | size %}
+			<li class="cat-item"><a href="categoria-{{ cat.id }}.html">{{ cat.nombre }}</a> ({{ n }})</li>
+		{%- endfor %}
+		</ul>
+	</div>
+</div>

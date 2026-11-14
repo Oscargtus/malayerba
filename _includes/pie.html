@@ -1,0 +1,74 @@
+{%- comment -%} Pie de página. Parámetro: interior (true en páginas interiores) {%- endcomment -%}
+{%- if include.interior %}
+<aside class="aside version-ii container wow fadeInUp" data-wow-delay="0.4s">
+	<div class="row">
+		<div class="col-xs-12 holder">
+{%- else %}
+<aside class="aside footer-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 holder">
+{%- endif %}
+				<div class="col">
+					{% include marca.html %}
+					<p>{{ site.pie.texto }}</p>
+					{% include redes.html %}
+				</div>
+				<nav class="col footer-nav">
+					<h3>Enlaces importantes</h3>
+					<ul>
+					{%- for e in site.data.enlaces %}
+						<li><a href="{{ e.url }}">{{ e.titulo }}</a></li>
+					{%- endfor %}
+					</ul>
+				</nav>
+				<div class="col widget-holder">
+					<h3>Lo último</h3>
+					<div class="widget recent-posts-widget">
+						<ol>
+						{%- for post in site.posts limit: 2 %}
+							<li>
+								<h4><a href="{{ post.url | remove_first: '/' }}">{{ post.title }}</a></h4>
+								<span class="post-tag"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{% include fecha.html fecha=post.date corta=true %}</time></span>
+							</li>
+						{%- endfor %}
+						</ol>
+					</div>
+				</div>
+				<nav class="col footer-nav">
+					<h3>Secciones</h3>
+					<ul>
+					{%- for cat in site.data.categorias %}
+						<li><a href="categoria-{{ cat.id }}.html">{{ cat.nombre }}</a></li>
+					{%- endfor %}
+					</ul>
+				</nav>
+{%- if include.interior %}
+		</div>
+	</div>
+</aside>
+<footer id="footer" class="container version-ii">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<p>&copy; {{ site.time | date: "%Y" }} <a href="index.html">{{ site.title }}</a>. Todos los derechos reservados.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			{% include redes.html %}
+		</div>
+	</div>
+</footer>
+{%- else %}
+			</div>
+		</div>
+	</div>
+</aside>
+<footer id="footer" class="wow fadeInUp" data-wow-delay="0.4s">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<p>&copy; {{ site.time | date: "%Y" }} <a href="index.html">{{ site.title }}</a>. Todos los derechos reservados.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+{%- endif %}

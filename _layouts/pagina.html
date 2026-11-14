@@ -1,0 +1,16 @@
+---
+layout: interior
+---
+{%- comment -%} Página de texto simple (sobre nosotros, contacto…): el contenido va en una tarjeta {%- endcomment -%}
+<article class="post-block single-post pagina wow fadeInUp" data-wow-delay="0.4s">
+	<div class="post-holder">
+		{%- if page.imagen %}
+		<div class="img-holder">
+			<img src="{{ page.imagen }}" alt="{{ page.imagen_alt }}" width="1200" height="800" decoding="async">
+		</div>
+		{%- endif %}
+		<div class="cuerpo-articulo">
+			{{ content }}
+		</div>
+	</div>
+</article>

@@ -1,0 +1,35 @@
+---
+layout: interior
+---
+{%- comment -%}
+  Listado de artículos: archivo.html (todos) y categoria-*.html (una sección).
+  Front matter: categoria (id de _data/categorias.yml) – si falta, muestra todos.
+{%- endcomment -%}
+{%- if page.categoria -%}
+	{%- assign lista = site.posts | where: "categoria", page.categoria -%}
+	{%- assign cat = site.data.categorias | where: "id", page.categoria | first -%}
+{%- else -%}
+	{%- assign lista = site.posts -%}
+{%- endif %}
+<div class="main-header">
+	<strong class="title">{% if cat %}{{ cat.descripcion }}{% else %}Todos los artículos de {{ site.title }}{% endif %}</strong>
+</div>
+{% include buscador.html clase="hidden-md hidden-lg" %}
+{{ content }}
+<section class="posts-blocks">
+	{%- for post in lista %}
+	<article class="post-block wow fadeInUp" data-wow-delay="0.3s">
+		<div class="post-holder">
+			<div class="img-holder">
+				<a href="{{ post.url | remove_first: '/' }}"><img src="{{ post.imagen }}" alt="" width="1200" height="800" loading="lazy" decoding="async"></a>
+			</div>
+			{% include etiqueta-fecha.html post=post corta=true %}
+			<h2><a href="{{ post.url | remove_first: '/' }}">{{ post.title }}</a></h2>
+			<p>{{ post.extracto }}</p>
+			<a href="{{ post.url | remove_first: '/' }}" class="read-more">Leer más</a>
+		</div>
+	</article>
+	{%- else %}
+	<p class="sin-articulos">Todavía no hay artículos en esta sección.</p>
+	{%- endfor %}
+</section>

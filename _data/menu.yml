@@ -1,0 +1,20 @@
+# Menú principal (header de todas las páginas).
+# - titulo: texto que se ve
+# - url: archivo de destino (sin "/" al inicio)
+# - categorias: true  -> muestra como submenú todas las categorías de _data/categorias.yml
+
+- titulo: Inicio
+  url: index.html
+
+- titulo: Secciones
+  url: archivo.html
+  categorias: true
+
+- titulo: Artículos
+  url: archivo.html
+
+- titulo: Sobre nosotros
+  url: sobre-nosotros.html
+
+- titulo: Contacto
+  url: contacto.html
