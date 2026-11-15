@@ -9,7 +9,7 @@ etiquetas: [etiqueta, otra etiqueta]
 destacado: true
 imagen_portada: assets/placeholders/IMG-HERO-03.jpg
 formato: video
-video: https://player.vimeo.com/video/25573104?dnt=1
+video: https://www.youtube-nocookie.com/embed/2ma3GsZn2Gg
 ---
 
 Primer párrafo del artículo. Aquí va la entrada: dos o tres frases que presentan el tema. Texto de ejemplo para reemplazar con el contenido real de Plantopia.
