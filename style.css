@@ -6349,6 +6349,11 @@ aside.version-ii .subscribe-form .form-control:focus {
 	color: #fff;
 }
 
+/* en el pie oscuro de las páginas interiores (.aside.version-ii) el nombre de la edición va en blanco */
+.aside.version-ii .brand-name {
+	color: #fff;
+}
+
 @media (max-width: 767px) {
 	:root {
 		--logo-size: 44px;
