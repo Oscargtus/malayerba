@@ -1,6 +1,6 @@
 # Plantopia – revista digital (proyecto `malayerba`, versión Jekyll)
 
-La editora es **Plantopia**; cada curso la revista tiene una **edición** (2026-2027: *CRM Rei Jaume I*).
+La editora es **Plantopia**; cada curso la revista tiene una **edición** (2026-2027: *CES Jaume I de Picassent*).
 El repositorio y la dirección web siguen llamándose `malayerba`.
 
 Escribes los artículos en **Markdown** (texto simple) y Jekyll arma el sitio completo: portada,

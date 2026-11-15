@@ -6245,7 +6245,7 @@ aside.version-ii .subscribe-form .form-control:focus {
   malayerba: ajustes propios
   - Marca = logo de Plantopia + nombre de la edición y curso (en _config.yml -> edicion):
       <img class="brand-logo" src="assets/marca/plantopia-logo.webp">
-      <span class="brand-text"><span class="brand-name">CRM Rei Jaume I</span><span class="brand-curso">2026-2027</span></span>
+      <span class="brand-text"><span class="brand-name">CES Jaume I de Picassent</span><span class="brand-curso">2026-2027</span></span>
     Tamaño del logo: cambia --logo-size abajo (es la ALTURA; el ancho sale solo).
     Sobre el header oscuro de la portada el logo va sobre una placa blanca (.brand-logo en #header.version-i).
   - Fondos con imágenes de contenido: van en el HTML (atributo style),
@@ -6375,6 +6375,42 @@ aside.version-ii .subscribe-form .form-control:focus {
 	#header.version-i .brand-logo {
 		padding: 3px 4px;
 		border-radius: 6px;
+	}
+}
+
+/* Nombre de la edición largo ("CES Jaume I de Picassent"): siempre en UNA línea y sin chocar
+   con el botón ☰, el menú ni la columna siguiente del pie. Solo se ajustan tamaños por ancho de pantalla. */
+@media (max-width: 359px) {
+	.brand-name {
+		font-size: 13px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#header .brand-name {
+		font-size: 15px;
+	}
+
+	/* menú horizontal en tableta: menos separación entre opciones para dejar sitio a la marca */
+	#nav .navbar-nav > li {
+		margin-left: 18px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1229px) {
+	.aside .brand-name {
+		font-size: 14px;
+	}
+
+	.aside .brand,
+	.aside .logo a.brand {
+		gap: 8px;
+	}
+}
+
+@media (min-width: 1230px) {
+	.aside .brand-name {
+		font-size: 16px;
 	}
 }
 
