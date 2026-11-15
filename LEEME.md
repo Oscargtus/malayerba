@@ -1,4 +1,7 @@
-# malayerba – revista digital (versión Jekyll)
+# Plantopia – revista digital (proyecto `malayerba`, versión Jekyll)
+
+La editora es **Plantopia**; cada curso la revista tiene una **edición** (2026-2027: *CRM Rei Jaume I*).
+El repositorio y la dirección web siguen llamándose `malayerba`.
 
 Escribes los artículos en **Markdown** (texto simple) y Jekyll arma el sitio completo: portada,
 secciones, archivo, artículos relacionados, buscador, RSS y sitemap.
@@ -15,8 +18,9 @@ El header, el menú, la barra lateral y el pie están en **un solo lugar** (`_in
 | `_drafts/plantilla-articulo.md` | Plantilla para copiar al escribir un artículo |
 | `assets/fotos/` | **Tus fotos** (vacía al principio) |
 | `assets/placeholders/` | Imágenes grises de ejemplo, para reemplazar (ver `IMAGENES.md`) |
+| `assets/marca/` | Logo de Plantopia (fondo transparente) e íconos de la pestaña |
 | `_data/` | Menú, secciones, autores, redes, enlaces, galería |
-| `_config.yml` | Nombre de la revista, textos generales, dirección del sitio |
+| `_config.yml` | Nombre (Plantopia), edición y curso, textos generales, dirección del sitio |
 | `sobre-nosotros.md`, `contacto.html` | Páginas de texto |
 | `tools/` | Comandos: vista previa, compilar/revisar, preparar fotos |
 | `_layouts/`, `_includes/`, `style.css` | Diseño (normalmente no hace falta tocarlos) |
@@ -111,7 +115,8 @@ donde hace falta: deja lo importante cerca del centro.
 
 | Qué | Dónde |
 |---|---|
-| Nombre de la revista, descripción, texto del perfil y del pie | `_config.yml` |
+| Nombre (Plantopia), descripción, texto del perfil y del pie | `_config.yml` |
+| Nombre de la edición y curso junto al logo | `_config.yml` → `edicion` (`nombre`, `curso`) |
 | Menú principal | `_data/menu.yml` |
 | Secciones (categorías) | `_data/categorias.yml` + un archivo `categoria-<id>.html` por sección |
 | Autores | `_data/autores.yml` |
@@ -120,6 +125,18 @@ donde hace falta: deja lo importante cerca del centro.
 | Franja de imágenes antes del pie | `_data/galeria.yml` |
 | Textos de "Sobre nosotros" y "Contacto" | `sobre-nosotros.md`, `contacto.html` |
 | Estilos | `style.css` (secciones *malayerba* al final) |
+| Color de acento (verde `#27ae60`) | `css/colors.css` y `style.css`: reemplaza `#27ae60` y `rgba(39, 174, 96, …)` en los dos |
+
+### Nueva edición cada curso
+
+En `_config.yml` cambia `edicion` → `nombre` (centro) y `curso` (p. ej. `2027-2028`), y reinicia la vista previa.
+Aparecen junto al logo en el header y en el pie de todas las páginas.
+
+### Cambiar el logo
+
+Reemplaza `assets/marca/plantopia-logo.webp` por una versión **con fondo transparente** (unos 240 px de alto).
+Si el logo nuevo tiene fondo blanco, sobre el header oscuro de la portada se verá un rectángulo blanco.
+Tamaño en pantalla: `--logo-size` en `style.css` (56 px; 44 px en móvil).
 
 **Añadir una sección:** añade el bloque en `_data/categorias.yml`, copia `categoria-1.html` como
 `categoria-<id-nuevo>.html` y cambia dentro `categoria:` y `title:`. El menú y el pie la incluyen solos.
@@ -166,6 +183,8 @@ En 1–2 minutos el sitio se actualiza; si algo falla, mira la pestaña *Actions
 | Un artículo no aparece | El nombre del archivo debe empezar con la fecha `AAAA-MM-DD-` y la fecha no puede ser futura |
 | Cambié `_config.yml` y no pasa nada | Reinicia la vista previa (`Ctrl + C` y `./tools/vista-previa.sh`) |
 | En GitHub el sitio no se actualiza | Mira la pestaña *Actions* del repositorio: si hay un error en rojo, dice el archivo |
+| Publiqué y sigo viendo la versión anterior | Es la caché del navegador: recarga con **Cmd + Shift + R** (Mac) o **Ctrl + Shift + R** (Windows) |
+| El sitio se ve más grande o más pequeño que el demo | Revisa el zoom del navegador en esa pestaña: **Cmd + 0** lo deja al 100 % |
 
 ## Notas técnicas
 
@@ -175,4 +194,6 @@ En 1–2 minutos el sitio se actualiza; si algo falla, mira la pestaña *Actions
 - Plugins: `jekyll-feed` (`feed.xml`, RSS) y `jekyll-sitemap` (`sitemap.xml` y `robots.txt`).
 - El buscador funciona en el navegador sin servicios externos: `js/indice-busqueda.js` se genera solo.
 - Fuentes de la plantilla original (Poppins, Merriweather y Biko, en `fonts/`) y jQuery 3.7.1 están dentro del sitio: sin dependencias externas ni Google Fonts.
+- Colores: esquema *chateau-green* de la plantilla Dot (`#27ae60`). La portada tiene el pie claro y las páginas interiores el pie oscuro
+  (por eso allí el nombre de la edición va en blanco: `.aside.version-ii .brand-name` en `style.css`).
 - La versión estática original está en `../malayerba/` como referencia.

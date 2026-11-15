@@ -1,6 +1,6 @@
 # Inventario de imágenes – Plantopia (Jekyll)
 
-Todas las imágenes son **placeholders** en `assets/placeholders/`, con su nombre y tamaño escritos dentro.
+Todas las imágenes son **placeholders** en `assets/placeholders/`, con su nombre y tamaño escritos dentro (excepto el logo de Plantopia, que está en `assets/marca/`).
 Para reemplazar una: guarda tu imagen con **exactamente el mismo nombre** (mayúsculas incluidas) y sobrescribe el archivo.
 
 Para **artículos nuevos** puedes crear tus propias imágenes en otra carpeta (por ejemplo `assets/fotos/`) y
