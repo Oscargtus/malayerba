@@ -1772,7 +1772,8 @@ h6 a:focus {
 	padding: 100px 15px 50px;
 }
 
-h1 {
+h1,
+.slideshow .h1 {
 	font-size: 30px;
 	line-height: 1.19;
 	text-transform: uppercase;
