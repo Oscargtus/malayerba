@@ -1124,7 +1124,7 @@ h6 a:focus {
 	text-transform: uppercase;
 	-webkit-transition: right .5s ease-out;
 	transition: right .5s ease-out;
-	font: 700 14px/1.5 var(--font-texto);
+	font: 700 14px/1.5 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	z-index: 99;
 }
 
@@ -1195,7 +1195,7 @@ h6 a:focus {
 	font-size: 20px;
 	line-height: 22px;
 	color: #fff;
-	font-family: var(--font-titulo);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0 0 40px;
 	text-align: center;
 	padding: 10px;
@@ -1322,7 +1322,7 @@ h6 a:focus {
 	padding: 8px 16px;
 	box-shadow: none;
 	color: #acacac;
-	font: 12px/1.1 var(--font-texto);
+	font: 12px/1.1 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #header form .form-control::-webkit-input-placeholder {
@@ -1451,7 +1451,7 @@ h6 a:focus {
 	position: static;
 	min-height: 1px;
 	text-align: left;
-	font: 600 16px/1.1 var(--font-texto);
+	font: 600 16px/1.1 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .version-ii #nav a.btn,
@@ -1497,7 +1497,7 @@ h6 a:focus {
 
 #nav .navbar-center li {
 	float: none;
-	font-family: var(--font-texto);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #nav .navbar-center li.logo {
@@ -1557,7 +1557,7 @@ h6 a:focus {
 	border-radius: 0;
 	border: 0;
 	margin: 1px 0 0;
-	font: 600 12px/1.1 var(--font-texto);
+	font: 600 12px/1.1 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 12px 15px 12px 30px;
 }
 
@@ -1641,7 +1641,7 @@ h6 a:focus {
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
-	font-family: var(--font-titulo);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .slideshow .slide {
@@ -1672,7 +1672,7 @@ h6 a:focus {
 
 .slideshow .title {
 	max-width: 0;
-	font: 700 12px/1.1 var(--font-texto);
+	font: 700 12px/1.1 "Merriweather", Georgia, "Times New Roman", Times, serif;
 	display: inline-block;
 	vertical-align: top;
 	padding: 10px 0;
@@ -1703,7 +1703,8 @@ h6 a:focus {
 	transform: skew(-30deg) translateX(-13px);
 }
 
-.slideshow h1 {
+.slideshow h1,
+.slideshow .h1 {
 	color: #fff;
 	margin: 0 0 25px;
 }
@@ -1711,7 +1712,7 @@ h6 a:focus {
 .slideshow .header a {
 	text-transform: uppercase;
 	text-decoration: none;
-	font: 600 14px/1.1 var(--font-texto);
+	font: 600 14px/1.1 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 0 0 7px;
 	display: inline-block;
 	vertical-align: top;
@@ -1951,7 +1952,7 @@ h1 {
 
 .cols-holder .post {
 	padding: 0 15px;
-	font: 13px/2 var(--font-texto);
+	font: 13px/2 "Merriweather", Georgia, "Times New Roman", Times, serif;
 	margin-bottom: 41px;
 	overflow: hidden;
 	text-align: center;
@@ -1991,7 +1992,7 @@ h1 {
 
 .cols-holder time {
 	display: block;
-	font: 700 12px/1.1 var(--font-texto);
+	font: 700 12px/1.1 "biko", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0 0 22px;
 	color: #2a2d34;
 	text-transform: uppercase;
@@ -2033,7 +2034,7 @@ h2 {
 	color: #2a2d34;
 	text-decoration: none;
 	text-transform: uppercase;
-	font: 700 12px/1.1 var(--font-texto);
+	font: 700 12px/1.1 "biko", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .link-more:hover,
@@ -2182,7 +2183,7 @@ h2 {
 
 .navigation .page-numbers,
 .pagination .page-numbers {
-	font: 700 12px/23px var(--font-texto);
+	font: 700 12px/23px "biko", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 5px 14px;
 	background: #fff;
 	margin: 0 3px 10px 0;
@@ -2269,7 +2270,7 @@ h2 {
 
 .widget.contact-widget {
 	border: 0;
-	font: 600 13px/1.5 var(--font-texto);
+	font: 600 13px/1.5 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .widget.contact-widget:before {
@@ -2363,7 +2364,7 @@ h2 {
 
 .widget.widget-block .subtitle {
 	display: block;
-	font: 11px/1.2 var(--font-texto);
+	font: 11px/1.2 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #a5a5a5;
 }
 
@@ -2417,7 +2418,7 @@ h2 {
 	box-sizing: border-box;
 	outline: none;
 	padding: 10px 15px;
-	font: 13px/1.1 var(--font-texto);
+	font: 13px/1.1 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	-webkit-transition: all .25s linear;
 	transition: all .25s linear;
 }
@@ -2506,7 +2507,7 @@ h2 {
 }
 
 .widget.widget_categories .lists-holder ul {
-	font-family: var(--font-texto);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 }
 
@@ -2515,7 +2516,7 @@ h2 {
 	margin: 0;
 	color: #2a2d34;
 	font-weight: 500;
-	font-family: var(--font-texto);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 }
 
@@ -2593,7 +2594,7 @@ h2 {
 .widget.recent-posts-widget .tab-head a {
 	display: block;
 	padding: 15px 5px 14px;
-	font: 600 13px/1.2 var(--font-texto);
+	font: 600 13px/1.2 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .widget.recent-posts-widget .tab-head a.active,
@@ -2626,7 +2627,7 @@ h2 {
 }
 
 .widget.recent-posts-widget .tag {
-	font: 700 11px/1.2 var(--font-texto);
+	font: 700 11px/1.2 "biko", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	display: inline-block;
 	vertical-align: middle;
 	padding: 6px 19px 6px 15px;
@@ -2680,7 +2681,7 @@ h2 {
 .widget.recent-posts-widget time {
 	color: #a3a3a3;
 	margin: 0 9px 0 0;
-	font: 700 11px/1.2 var(--font-texto);
+	font: 700 11px/1.2 "biko", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -2706,7 +2707,7 @@ h2 {
 .widget.recent-posts-widget ol {
 	padding: 0;
 	margin: 0 0 -23px;
-	font: 600 13px/1.63 var(--font-texto);
+	font: 600 13px/1.63 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .widget.recent-posts-widget ul li,
@@ -2833,7 +2834,7 @@ h2 {
 
 .widget.profile-widget h3 {
 	margin: 0 0 24px;
-	font: 700 20px/1.2 var(--font-texto);
+	font: 700 20px/1.2 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	color: inherit;
 }
@@ -3135,7 +3136,7 @@ h2 {
 }
 
 .aside .col {
-	font-family: var(--font-texto);
+	font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
 	margin-bottom: 30px;
 }
 
@@ -3148,7 +3149,7 @@ h2 {
 }
 
 .aside .col.footer-nav {
-	font-family: var(--font-texto);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .aside .widget.recent-posts-widget {
@@ -3231,7 +3232,7 @@ h2 {
 -------------------------------------------------------------------*/
 
 .footer-nav {
-	font-family: var(--font-texto);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 500;
 }
 
@@ -3280,7 +3281,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	border-radius: 0;
 	outline: none;
 	box-shadow: none;
-	font: 300 12px/1.1 var(--font-texto);
+	font: 300 12px/1.1 "Merriweather", Georgia, "Times New Roman", Times, serif;
 	padding: 10px 18px;
 	-webkit-transition: all .25s linear;
 	transition: all .25s linear;
@@ -3359,7 +3360,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	padding-top: 22px;
 	padding-bottom: 19px;
 	text-align: center;
-	font: 12px/2.17 var(--font-texto);
+	font: 12px/2.17 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	position: relative;
 }
 
@@ -3422,7 +3423,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 -------------------------------------------------------------------*/
 
 .policy-nav {
-	font: 500 10px/1.1 var(--font-texto);
+	font: 500 10px/1.1 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -3436,7 +3437,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 0;
-	font-family: var(--font-texto);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .policy-nav li:first-child:before {
@@ -3469,7 +3470,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 .read-more {
 	text-decoration: underline;
 	text-transform: uppercase;
-	font: 700 12px/1.1 var(--font-texto);
+	font: 700 12px/1.1 "biko", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .read-more:hover,
@@ -3536,7 +3537,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	color: #999;
 	display: block;
 	margin: 0 0 15px;
-	font: 11px/1.2 var(--font-texto);
+	font: 11px/1.2 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -3741,7 +3742,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 }
 
 .post-block time {
-	font: 700 12px/1.1 var(--font-texto);
+	font: 700 12px/1.1 "biko", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	display: inline-block;
 	vertical-align: top;
 	text-transform: uppercase;
@@ -3799,7 +3800,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 }
 
 .post-block footer .text {
-	font-family: var(--font-texto);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	line-height: 1.1;
 	position: relative;
@@ -3867,7 +3868,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 .posts-blocks .post-block {
 	max-width: 350px;
 	margin: 0 auto 31px;
-	font-family: var(--font-texto);
+	font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
 }
 
 .posts-blocks .header {
@@ -3876,7 +3877,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	font-size: 13px;
 	padding: 0 15px;
 	line-height: 2;
-	font-family: var(--font-titulo);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .posts-blocks .header h2 {
@@ -3916,7 +3917,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	width: 100%;
 	white-space: normal;
 	color: #fff;
-	font-family: var(--font-texto);
+	font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
 	background-position: 50% 50%;
 	background-size: cover;
 	min-height: 430px;
@@ -4038,7 +4039,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	display: block;
 	color: #999;
 	text-transform: uppercase;
-	font: 11px/1.1 var(--font-texto);
+	font: 11px/1.1 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .blocks-slider time a {
@@ -4072,7 +4073,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	width: 100%;
 	margin: 0 20px 31px 0;
 	float: left;
-	font-family: var(--font-texto);
+	font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
 	font-size: 12px;
 	line-height: 2.17;
 }
@@ -4122,7 +4123,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	overflow: hidden;
 	color: #fff;
 	z-index: 1;
-	font: italic 600 16px/1.5 var(--font-texto);
+	font: italic 600 16px/1.5 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	position: relative;
 }
 
@@ -4170,7 +4171,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	z-index: 3;
 	color: #fff;
 	text-transform: uppercase;
-	font: 700 12px/1.1 var(--font-texto);
+	font: 700 12px/1.1 "biko", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .masonry-blocks time a,
@@ -4259,7 +4260,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 }
 
 .masonry-blocks .info .count {
-	font-family: var(--font-titulo);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.1;
 	font-weight: 400;
 	position: relative;
@@ -4411,7 +4412,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	float: left;
 	text-align: center;
 	z-index: 1;
-	font: 600 12px/6.4em var(--font-texto);
+	font: 600 12px/6.4em "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	position: relative;
 	position: relative;
 }
@@ -4546,7 +4547,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 .instagram-list li {
 	display: inline-block;
 	vertical-align: top;
-	font-family: var(--font-texto);
+	font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
 	width: 33.333%;
 	padding: 0 5px;
 	margin: 0 0 9px;
@@ -4596,7 +4597,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	margin: 0 0 28px;
 	padding: 32px 29px 0;
 	color: #a6a6a6;
-	font: 13px/2 var(--font-texto);
+	font: 13px/2 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .comments .header p,
@@ -4718,7 +4719,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 }
 
 .commentlist-item .meta {
-	font: 11px/1.2 var(--font-texto);
+	font: 11px/1.2 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0 0 12px;
 }
 
@@ -4740,7 +4741,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 }
 
 .commentlist-item .name {
-	font: 600 15px/1.73 var(--font-texto);
+	font: 600 15px/1.73 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #2a2d34;
 	padding: 0 9px 0 0;
 	margin: 0 0 4px;
@@ -4753,7 +4754,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 .commentlist-item .comment-reply-link {
 	font-weight: 600;
 	line-height: 1.5;
-	font-family: var(--font-texto);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #2a2d34;
 }
 
@@ -4812,7 +4813,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 }
 
 .comment-form label {
-	font: 600 13px/2 var(--font-texto);
+	font: 600 13px/2 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #2a2d34;
 	margin-bottom: 3px;
 }
@@ -4834,7 +4835,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 .comment-form textarea {
 	box-sizing: border-box;
 	margin: 0 0 15px;
-	font: 12px/1.2 var(--font-texto);
+	font: 12px/1.2 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	width: 100%;
 	height: 38px;
 	color: #b7b7b7;
@@ -4919,7 +4920,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 .comment-form button[type="submit"] {
 	border-radius: 2px;
 	border: 0;
-	font: 600 14px/1.5 var(--font-texto);
+	font: 600 14px/1.5 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0;
 	text-align: center;
 	padding: 15px;
@@ -4976,7 +4977,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	border-radius: 0;
 	padding: 0;
 	margin: 0;
-	font: 12px/1.5 var(--font-texto);
+	font: 12px/1.5 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #fff;
 }
 
@@ -5022,7 +5023,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	z-index: 3;
 	color: #fff;
 	text-transform: uppercase;
-	font: 700 12px/1.1 var(--font-texto);
+	font: 700 12px/1.1 "biko", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .single-postv2 time a,
@@ -5082,7 +5083,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 }
 
 .single-postv2 .info .text {
-	font-family: var(--font-texto);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.1;
 	font-weight: 400;
 	position: relative;
@@ -5175,7 +5176,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	padding: 0 5px 0 3px;
 	display: inline-block;
 	vertical-align: top;
-	font-family: var(--font-texto);
+	font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
 	width: 100%;
 	margin: 0 0 10px;
 }
@@ -5191,7 +5192,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	display: block;
 	color: #979797;
 	text-transform: uppercase;
-	font: 11px/1.5 var(--font-texto);
+	font: 11px/1.5 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .recent-posts time a {
@@ -5220,7 +5221,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 
 .page-error .heading-holder {
 	color: #888;
-	font-family: var(--font-titulo);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	margin-bottom: 30px;
 }
@@ -5239,7 +5240,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 
 .page-error h1 {
 	margin: 0 auto 52px;
-	font: 700 110px/.46 var(--font-texto);
+	font: 700 110px/.46 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: lowercase;
 	color: #2a2d34;
 	max-width: 220px;
@@ -5256,7 +5257,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 
 .page-error h2 {
 	margin: 0 auto 52px;
-	font: 700 33px/.46 var(--font-texto);
+	font: 700 33px/.46 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
 	color: #2a2d34;
 	text-shadow: 10px 16px 0 rgba(0, 0, 0, .03);
@@ -5308,7 +5309,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	font-size: 30px;
 	line-height: 30px;
 	color: #252525;
-	font-family: var(--font-titulo);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	padding: 0 0 20px;
 	margin: 0 0 20px;
@@ -5335,7 +5336,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	line-height: 14px;
 	color: #707070;
 	text-transform: uppercase;
-	font-family: var(--font-texto);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	position: relative;
 }
@@ -5348,7 +5349,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 	background: #2a2d34;
 	color: #fff;
 	padding: 17px 17px 14px;
-	font: 600 14px/1.86 var(--font-texto);
+	font: 600 14px/1.86 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	border: 0;
 }
 
@@ -5370,7 +5371,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 }
 
 .main-header .title {
-	font-family: var(--font-titulo);
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 20px;
@@ -6241,64 +6242,39 @@ aside.version-ii .subscribe-form .form-control:focus {
 
 /*==================================================================
   malayerba: ajustes propios
-  - Logo = imagen + nombre en texto, dos piezas separadas dentro de <a class="brand">:
-      <img class="brand-logo" src="assets/placeholders/IMG-LOGO-01.svg">  -> reemplaza ese archivo
-      <span class="brand-name">malayerba</span>                          -> texto editable
-    Para ocultar una de las dos piezas: .brand-logo { display: none; } o .brand-name { display: none; }
-    Tamaño del logo: cambia --logo-size abajo.
+  - Marca = logo de Plantopia + nombre de la edición y curso (en _config.yml -> edicion):
+      <img class="brand-logo" src="assets/marca/plantopia-logo.webp">
+      <span class="brand-text"><span class="brand-name">CRM Rei Jaume I</span><span class="brand-curso">2026-2027</span></span>
+    Tamaño del logo: cambia --logo-size abajo (es la ALTURA; el ancho sale solo).
+    Sobre el header oscuro de la portada el logo va sobre una placa blanca (.brand-logo en #header.version-i).
   - Fondos con imágenes de contenido: van en el HTML (atributo style),
     ver IMAGENES.md (IMG-HERO-xx, IMG-BG-01).
 ==================================================================*/
 
-/* Tipografía de malayerba (autoalojada, licencia OFL en cada carpeta de fonts/)
-   - Títulos: Fraunces          -> --font-titulo
-   - Texto, menú y etiquetas: Source Serif 4 -> --font-texto
-   Para cambiar de fuente, cambia solo estas dos variables (y sus @font-face). */
-@font-face {
-	font-family: "Fraunces";
-	src: url("fonts/fraunces/fraunces-latin-normal.woff2") format("woff2");
-	font-weight: 600 700;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Source Serif 4";
-	src: url("fonts/source-serif-4/source-serif-4-latin-normal.woff2") format("woff2");
-	font-weight: 400 600;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "Source Serif 4";
-	src: url("fonts/source-serif-4/source-serif-4-latin-italic.woff2") format("woff2");
-	font-weight: 400 600;
-	font-style: italic;
-	font-display: swap;
-}
+/* Tipografía de la plantilla Dot (autoalojada, sin Google Fonts):
+   - Poppins: títulos, menú, botones          (licencia OFL: fonts/poppins/OFL.txt)
+   - Merriweather: texto, etiquetas, fechas    (licencia OFL: fonts/merriweather/OFL.txt)
+   - Biko: fecha/categoría de los artículos y "Leer más" (incluida con la plantilla)
+   Las reglas de la plantilla usan los nombres directamente; las variables de abajo
+   son para los estilos propios de este bloque. */
+@font-face { font-family: "Poppins"; src: url("fonts/poppins/poppins-latin-300-normal.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("fonts/poppins/poppins-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("fonts/poppins/poppins-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("fonts/poppins/poppins-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("fonts/poppins/poppins-latin-600-italic.woff2") format("woff2"); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("fonts/poppins/poppins-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Merriweather"; src: url("fonts/merriweather/merriweather-latin-300-normal.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Merriweather"; src: url("fonts/merriweather/merriweather-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Merriweather"; src: url("fonts/merriweather/merriweather-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Merriweather"; src: url("fonts/merriweather/merriweather-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "biko"; src: url("fonts/biko/Biko.woff2") format("woff2"), url("fonts/biko/Biko.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "biko"; src: url("fonts/biko/Biko-Bold.woff2") format("woff2"), url("fonts/biko/Biko-Bold.woff") format("woff"); font-weight: 700; font-style: normal; font-display: swap; }
 
 :root {
-	--font-titulo: "Fraunces", Georgia, "Times New Roman", serif;
-	--font-texto: "Source Serif 4", Georgia, "Times New Roman", serif;
-	--logo-size: 40px;
-}
-
-/* Menú y etiquetas en versalitas (en lugar de mayúsculas) */
-#nav,
-.policy-nav,
-.footer-nav,
-.post-block footer .text,
-.widget.widget_categories ul {
-	text-transform: none;
-	font-variant-caps: all-small-caps;
-	letter-spacing: .06em;
-}
-
-/* Fraunces solo trae pesos 600-700: los títulos que la plantilla ponía más finos usan 600 */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-	font-weight: 600;
+	--font-titulo: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-texto: "Merriweather", Georgia, "Times New Roman", Times, serif;
+	--font-meta: "biko", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--logo-size: 56px;
 }
 
 .logo,
@@ -6310,10 +6286,9 @@ h1, h2, h3, h4, h5, h6,
 .logo a.brand {
 	display: inline-flex;
 	align-items: center;
-	gap: 10px;
+	gap: 12px;
 	color: #2a2d34;
 	text-decoration: none;
-	white-space: nowrap;
 }
 
 .brand:hover,
@@ -6326,21 +6301,39 @@ h1, h2, h3, h4, h5, h6,
 .logo .brand-logo,
 .brand-logo {
 	display: block;
-	width: var(--logo-size);
+	width: auto;
 	height: var(--logo-size);
 	max-width: none;
 	flex: 0 0 auto;
-	object-fit: contain;
+}
+
+/* Placa blanca detrás del logo sobre el header oscuro de la portada */
+#header.version-i .brand-logo {
+	box-sizing: content-box;
+	padding: 4px 6px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, .25);
+}
+
+.brand-text {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	min-width: 0;
 }
 
 .brand-name {
-	font-family: var(--font-titulo, Georgia, serif);
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1;
-	letter-spacing: -0.3px;
-	text-transform: lowercase;
+	font: 600 18px/1.15 var(--font-titulo);
 	color: #2a2d34;
+	white-space: nowrap;
+}
+
+.brand-curso {
+	font: 700 12px/1 var(--font-meta);
+	letter-spacing: .04em;
+	color: #f5ab35;
+	white-space: nowrap;
 }
 
 /* en la portada el header va sobre el slideshow oscuro */
@@ -6350,15 +6343,25 @@ h1, h2, h3, h4, h5, h6,
 
 @media (max-width: 767px) {
 	:root {
-		--logo-size: 32px;
+		--logo-size: 44px;
 	}
 
-	.brand {
+	.brand,
+	.logo a.brand {
 		gap: 8px;
 	}
 
 	.brand-name {
-		font-size: 20px;
+		font-size: 15px;
+	}
+
+	.brand-curso {
+		font-size: 11px;
+	}
+
+	#header.version-i .brand-logo {
+		padding: 3px 4px;
+		border-radius: 6px;
 	}
 }
 

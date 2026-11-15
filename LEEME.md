@@ -41,12 +41,13 @@ Para detenerla: `Ctrl + C`.
 
 Hay dos casos.
 
-### A) Reemplazar un placeholder (logo, portada, perfil, banner…)
+### A) Reemplazar un placeholder (portada, perfil, banner…)
 
 1. Busca en `IMAGENES.md` qué placeholder quieres cambiar y su tamaño ideal (por ejemplo `IMG-BANNER-01.jpg`, 370×415).
 2. Guarda tu imagen en `assets/placeholders/` con **exactamente el mismo nombre**, sobrescribiendo el gris.
    - Mismo nombre y misma extensión, **en minúsculas**: `IMG-BANNER-01.jpg` (no `.JPG`, `.jpeg` ni `.png`).
-   - El logo es la excepción: `IMG-LOGO-01.svg` debe ser un archivo **SVG**.
+   - El logo de Plantopia no es un placeholder: está en `assets/marca/` (ver `IMAGENES.md`).
+   - El nombre de la edición y el curso que aparecen junto al logo se cambian en `_config.yml` → `edicion`.
 3. No hay que tocar ningún código. Si la proporción es distinta a la ideal, la imagen se adapta sin deformarse,
    pero puede verse más alta o más baja.
 
@@ -173,5 +174,5 @@ En 1–2 minutos el sitio se actualiza; si algo falla, mira la pestaña *Actions
   funcionan igual en GitHub Pages y en cualquier hosting.
 - Plugins: `jekyll-feed` (`feed.xml`, RSS) y `jekyll-sitemap` (`sitemap.xml` y `robots.txt`).
 - El buscador funciona en el navegador sin servicios externos: `js/indice-busqueda.js` se genera solo.
-- Fuentes (Fraunces + Source Serif 4) y jQuery 3.7.1 están dentro del sitio: sin dependencias externas.
+- Fuentes de la plantilla original (Poppins, Merriweather y Biko, en `fonts/`) y jQuery 3.7.1 están dentro del sitio: sin dependencias externas ni Google Fonts.
 - La versión estática original está en `../malayerba/` como referencia.

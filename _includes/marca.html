@@ -1,2 +1,2 @@
-{%- comment -%} Logo (imagen) + nombre en texto, dos piezas separadas. Ver style.css (.brand) {%- endcomment -%}
-<div class="logo"><a class="brand" href="index.html"><img class="brand-logo" src="assets/placeholders/IMG-LOGO-01.svg" alt="" width="40" height="40"><span class="brand-name">{{ site.title }}</span></a></div>
+{%- comment -%} Marca: logo de Plantopia + nombre de la edición y curso (se editan en _config.yml -> edicion). Ver style.css (.brand) {%- endcomment -%}
+<div class="logo"><a class="brand" href="index.html"><img class="brand-logo" src="assets/marca/plantopia-logo.webp" alt="{{ site.title }}" width="164" height="240"><span class="brand-text"><span class="brand-name">{{ site.edicion.nombre }}</span><span class="brand-curso">{{ site.edicion.curso }}</span></span></a></div>

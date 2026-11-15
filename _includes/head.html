@@ -5,7 +5,7 @@
 	{%- capture titulo %}{{ site.title }} – {{ site.lema }}{% endcapture -%}
 {%- endif -%}
 {%- assign descripcion = page.extracto | default: page.description | default: site.description | strip_html | strip_newlines | truncate: 160 -%}
-{%- assign imagen = page.imagen | default: "assets/placeholders/IMG-LOGO-01.svg" -%}
+{%- assign imagen = page.imagen | default: "assets/marca/plantopia-logo.webp" -%}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ titulo }}</title>
@@ -23,9 +23,10 @@
 <meta name="twitter:card" content="summary_large_image">
 {%- endif %}
 <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="feed.xml">
-<link rel="icon" href="assets/placeholders/IMG-LOGO-01.svg" type="image/svg+xml">
-<link rel="preload" href="fonts/fraunces/fraunces-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/source-serif-4/source-serif-4-latin-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="assets/marca/plantopia-favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/marca/plantopia-apple-touch.png">
+<link rel="preload" href="fonts/poppins/poppins-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/merriweather/merriweather-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/slick.css">
@@ -44,11 +45,11 @@
 	"image": [{{ imagen | jsonify }}],
 	"datePublished": "{{ page.date | date_to_xmlschema }}",
 	"author": {"@type": "Person", "name": {{ autor.nombre | default: site.title | jsonify }}},
-	"publisher": {"@type": "Organization", "name": {{ site.title | jsonify }}, "logo": {"@type": "ImageObject", "url": "assets/placeholders/IMG-LOGO-01.svg"}}
+	"publisher": {"@type": "Organization", "name": {{ site.title | jsonify }}, "logo": {"@type": "ImageObject", "url": "assets/marca/plantopia-logo.webp"}}
 }
 </script>
 {%- elsif page.url == "/" or page.url == "/index.html" %}
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": {{ site.title | jsonify }}, "description": {{ site.description | strip | jsonify }}, "logo": "assets/placeholders/IMG-LOGO-01.svg"}
+{"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": {{ site.title | jsonify }}, "description": {{ site.description | strip | jsonify }}, "logo": "assets/marca/plantopia-logo.webp"}
 </script>
 {%- endif %}

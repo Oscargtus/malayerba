@@ -3,10 +3,16 @@
 #  Después de cambiar este archivo, reinicia la vista previa.
 # ==========================================================
 
-title: malayerba
+title: Plantopia
 lema: Revista digital
+
+# Edición del curso: aparece junto al logo (header y pie). Cámbiala cada año.
+edicion:
+  nombre: CRM Rei Jaume I
+  curso: 2026-2027
+
 description: >-
-  malayerba, revista digital. Descripción breve de la revista para buscadores y redes sociales.
+  Plantopia, revista digital. Descripción breve de la revista para buscadores y redes sociales.
 lang: es
 
 # Dirección pública del sitio, SIN barra final. Hace falta para el RSS, el sitemap
@@ -23,14 +29,14 @@ articulos_en_portada: 9
 # Texto del perfil de la revista (barra lateral y menú lateral)
 perfil:
   titulo: Sobre la revista
-  nombre: malayerba
+  nombre: Plantopia
   texto: Breve descripción de la revista. Texto de ejemplo para reemplazar.
   imagen: assets/placeholders/IMG-AVATAR-01.jpg
   imagen_menu_lateral: assets/placeholders/IMG-AVATAR-02.jpg
 
 # Texto del pie de página
 pie:
-  texto: Breve descripción de malayerba para el pie de página. Texto de ejemplo para reemplazar.
+  texto: Breve descripción de Plantopia para el pie de página. Texto de ejemplo para reemplazar.
 
 # ---------- Ajustes técnicos (normalmente no hace falta tocarlos) ----------
 

@@ -4,9 +4,9 @@ title: Sobre nosotros
 imagen: assets/placeholders/IMG-POST-12.jpg
 ---
 
-## Sobre malayerba
+## Sobre Plantopia
 
-Párrafo de presentación de la revista: qué es malayerba, qué publica y por qué existe. Texto de ejemplo para reemplazar.
+Párrafo de presentación de la revista: qué es Plantopia, qué publica y por qué existe. Texto de ejemplo para reemplazar.
 
 > Una frase que resuma el espíritu de la revista. Texto de ejemplo.
 

@@ -1055,7 +1055,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: var(--font-texto);
+  font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   line-height: 2.2857142857;
   color: #999;
@@ -1139,7 +1139,7 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: var(--font-titulo);
+  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   line-height: 1.1;
   color: inherit; }

@@ -520,7 +520,7 @@
     padding: 12px 21px 12px 51px; }
     #nav .btn .icon {
       left: 15px; }
-  h1 {
+  h1, .slideshow .h1 {
     font-size: 35px; }
   .slideshow {
     margin: 0 0 70px; }
@@ -638,7 +638,7 @@
     #nav .drop .drop {
       right: 100%;
       left: auto; }
-  h1 {
+  h1, .slideshow .h1 {
     font-size: 42px; }
   .slideshow {
     margin: 0 0 105px; }
@@ -666,7 +666,7 @@
       right: auto; } }
 
 @media (max-width: 767px) {
-  .slideshow h1 {
+  .slideshow h1, .slideshow .h1 {
     font-size: 19px; }
   #nav .drop ul a {
     padding: 10px 30px; }

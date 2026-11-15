@@ -10,7 +10,7 @@ destacado: true
 imagen_portada: assets/placeholders/IMG-HERO-02.jpg
 ---
 
-Primer párrafo del artículo. Aquí va la entrada: dos o tres frases que presentan el tema. Texto de ejemplo para reemplazar con el contenido real de malayerba.
+Primer párrafo del artículo. Aquí va la entrada: dos o tres frases que presentan el tema. Texto de ejemplo para reemplazar con el contenido real de Plantopia.
 
 Segundo párrafo con **negritas**, *cursivas* y un [enlace a otra página](archivo.html). Este bloque sirve para ver cómo se comporta la tipografía con varias líneas de texto seguido.
 
