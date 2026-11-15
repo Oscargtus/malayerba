@@ -6337,6 +6337,13 @@ aside.version-ii .subscribe-form .form-control:focus {
 	white-space: nowrap;
 }
 
+/* Solo en el pie: el nombre de la edición y el curso se alinean con el borde inferior del logo
+   (en el header siguen centrados verticalmente) */
+.aside .brand,
+.aside .logo a.brand {
+	align-items: flex-end;
+}
+
 /* en la portada el header va sobre el slideshow oscuro */
 #header.version-i .brand-name {
 	color: #fff;
