@@ -3,12 +3,12 @@
 
 - id: autor-1
   nombre: Oscar A. Rodríguez
-  bio: Breve biografía del autor. Texto de ejemplo para reemplazar.
+  bio: "Oscar es colaborador de la revista y corresponsal en América y Asia para Plantopia. Escribe desde donde le toca estar y nos trae lo que ve en cada lugar, con la conversación pausada de una taza de café de por medio."
   foto: assets/placeholders/IMG-AVATAR-03.jpg
   web: ""
 
 - id: autor-2
   nombre: Emac
-  bio: Breve biografía de la autora. Texto de ejemplo para reemplazar.
+  bio: "Eva María es profesora de Formación Profesional y suma muchos años de experiencia en el aula. Le gusta generar proyectos, y los genera con ganas y buena compañía. Es experta en innovación docente, y en estas páginas comparte lo que va descubriendo en el camino."
   foto: assets/placeholders/IMG-AVATAR-04.jpg
   web: ""

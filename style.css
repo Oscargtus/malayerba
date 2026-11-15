@@ -4953,12 +4953,13 @@ aside.version-ii .subscribe-form .form-control:focus {
 .page-head {
 	z-index: 1;
 	color: #fff;
-	padding-top: 71px;
-	padding-bottom: 68px;
+	/* malayerba: banner más bajo, 175 px (la plantilla tenía 71/68 de padding y 199 de alto) */
+	padding-top: 59px;
+	padding-bottom: 56px;
 	margin-bottom: 40px;
 	background-position: 50%;
 	background-size: cover;
-	min-height: 199px;
+	min-height: 175px;
 }
 
 .page-head h1 {
@@ -6577,6 +6578,7 @@ input:focus-visible,
 	font-size: 30px;
 	line-height: 1.25;
 	text-transform: none;
+	color: #2a2d34; /* título del artículo en oscuro, como los ## */
 }
 
 .post-block.single-post .lectura {
@@ -6641,12 +6643,6 @@ input:focus-visible,
 .cuerpo-articulo h4,
 .cuerpo-articulo h5,
 .cuerpo-articulo h6 {
-	color: #2a2d34;
-}
-
-/* Negritas (**texto**) en tono oscuro para que resalten sobre el texto gris (todos los artículos y páginas) */
-.cuerpo-articulo strong,
-.cuerpo-articulo b {
 	color: #2a2d34;
 }
 

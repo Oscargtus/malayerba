@@ -30,7 +30,7 @@ articulos_en_portada: 9
 perfil:
   titulo: Sobre la revista
   nombre: Plantopia
-  texto: Breve descripción de la revista. Texto de ejemplo para reemplazar.
+  texto: "Plantopia es una revista digital sobre educación e innovación, con la mirada en la FP, la sostenibilidad y el medio rural. Conoce el proyecto. Aquí te contamos qué hacemos y cómo puedes participar."
   imagen: assets/placeholders/IMG-AVATAR-01.jpg
   imagen_menu_lateral: assets/placeholders/IMG-AVATAR-02.jpg
 
