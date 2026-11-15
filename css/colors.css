@@ -1,5 +1,5 @@
-/* malayerba: color de acento = #2ecc71 (esquema "light-green" de la plantilla Dot).
-   Para cambiarlo, reemplaza #2ecc71 (y rgba(46, 204, 113, …)) aquí y en style.css. */
+/* malayerba: color de acento = #27ae60 (esquema "chateau-green" de la plantilla Dot).
+   Para cambiarlo, reemplaza #27ae60 (y rgba(39, 174, 96, …)) aquí y en style.css. */
 #nav .btn:hover,
 #nav .btn:focus,
 #nav .btn:active,
@@ -37,7 +37,7 @@
 .masonry-blocks time strong::after,
 #nav .drop a:hover:after,
 .side-nav h2 {
-  background-color: #2ecc71; }
+  background-color: #27ae60; }
 
 #back-top,
 #header .social-networks a:hover,
@@ -141,7 +141,7 @@ h6 a:focus,
 .video-holder .ico-play:active,
 .video-holder .ico-play:focus,
 .page-error .comming-timer .countdown-amount {
-  color: #2ecc71; }
+  color: #27ae60; }
 
 .widget .social-networks.justify li.active a,
 .widget ul.social-networks.justify li.active a,
@@ -161,10 +161,10 @@ h6 a:focus,
 .slideshow .header a::after,
 .switcher,
 #nav .navbar-toggle {
-  border-color: #2ecc71; }
+  border-color: #27ae60; }
 
 .side-nav h2:before {
-  border-top-color: #2ecc71; }
+  border-top-color: #27ae60; }
 
 .masonry-blocks blockquote:after {
-  background: rgba(46, 204, 113, 0.8); }
+  background: rgba(39, 174, 96, 0.6); }
