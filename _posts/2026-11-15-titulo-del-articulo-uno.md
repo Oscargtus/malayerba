@@ -1,10 +1,10 @@
 ---
-title: "Bienvenida"
+title: "¡Bienvenidos!"
 categoria: "1"
 autor: autor-1
 imagen: assets/fotos/post_1.jpg
 imagen_alt: "Libro abierto sobre el fondo de un bosque"
-extracto: "Extracto del artículo: Bienvenida a esta nuestra Revista Digital para el curso lectivo 2026-2027 en CES Jaume I de Picassent."
+extracto: "Bienvenidos a esta nuestra Revista Digital para el curso lectivo 2026-2027 en CES Jaume I de Picassent."
 etiquetas: [Educación, Innovación]
 destacado: true
 imagen_portada: assets/placeholders/IMG-HERO-01.jpg
