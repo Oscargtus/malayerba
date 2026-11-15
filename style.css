@@ -1529,7 +1529,7 @@ h6 a:focus {
 #nav li:hover > a:after {
 	opacity: 1;
 	width: 18px;
-	border-color: #f5ab35;
+	border-color: #2ecc71;
 }
 
 #nav li:hover > .drop {
@@ -6332,7 +6332,7 @@ aside.version-ii .subscribe-form .form-control:focus {
 .brand-curso {
 	font: 700 12px/1 var(--font-meta);
 	letter-spacing: .04em;
-	color: #f5ab35;
+	color: #2ecc71;
 	white-space: nowrap;
 }
 
@@ -6448,7 +6448,7 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 [tabindex]:focus-visible {
-	outline: 2px solid #f5ab35;
+	outline: 2px solid #2ecc71;
 	outline-offset: 2px;
 }
 
@@ -6504,7 +6504,7 @@ input:focus-visible,
 
 .contact-info .contact-mail .icon {
 	margin-right: 8px;
-	color: #f5ab35;
+	color: #2ecc71;
 }
 
 .contact-info .social-networks {
@@ -6696,9 +6696,9 @@ input:focus-visible,
 	#nav.navbar-default .navbar-nav > li > a:focus-visible,
 	#nav.navbar-default .navbar-nav .drop a:hover,
 	#nav.navbar-default .navbar-nav .drop a:focus-visible {
-		color: #f5ab35;
+		color: #2ecc71;
 		background: rgba(255, 255, 255, .05);
-		box-shadow: inset 3px 0 0 #f5ab35;
+		box-shadow: inset 3px 0 0 #2ecc71;
 		padding-left: 26px;
 		outline: none;
 	}
@@ -6708,9 +6708,9 @@ input:focus-visible,
 	#nav.navbar-default .navbar-nav > li.active > a:hover,
 	#nav.navbar-default .navbar-nav > li.active > a:focus,
 	#nav.navbar-default .navbar-nav .drop li.active > a {
-		color: #f5ab35;
+		color: #2ecc71;
 		background: rgba(255, 255, 255, .07);
-		box-shadow: inset 4px 0 0 #f5ab35;
+		box-shadow: inset 4px 0 0 #2ecc71;
 	}
 
 	/* Submenú de secciones: siempre abierto, sangrado y más discreto */
