@@ -6636,6 +6636,14 @@ input:focus-visible,
 	font-size: 18px;
 }
 
+/* Subtítulos (### y menores) en el mismo tono oscuro que los ## (si no, heredan el gris del texto) */
+.cuerpo-articulo h3,
+.cuerpo-articulo h4,
+.cuerpo-articulo h5,
+.cuerpo-articulo h6 {
+	color: #2a2d34;
+}
+
 /* Sobre nosotros: equipo */
 .equipo,
 .cuerpo-articulo .equipo {

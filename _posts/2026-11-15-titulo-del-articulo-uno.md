@@ -1,7 +1,7 @@
 ---
 title: "¡Bienvenidos!"
 categoria: "1"
-autor: autor-1
+autor: autor-2
 imagen: assets/fotos/post_1.jpg
 imagen_alt: "Libro abierto sobre el fondo de un bosque"
 extracto: "Bienvenidos a esta nuestra Revista Digital para el curso lectivo 2026-2027 en CES Jaume I de Picassent."
@@ -29,10 +29,10 @@ También nace de una convicción: la FP agraria y el medio natural y rural tiene
 
 ### Que vas a encontrar
 
-- **Experiencias de aula: **proyectos reales contados paso a paso, con sus aciertos y sus tropiezos, para que cualquiera pueda replicarlos.
+- **Experiencias de aula:** proyectos reales contados paso a paso, con sus aciertos y sus tropiezos, para que cualquiera pueda replicarlos.
 - **Divulgación:** conceptos que parecen complejos, de la fermentación al suelo vivo, explicados sin jerga.
 - **Entrevistas:** voces de la naturaleza, del campo, del aula y de la investigación.
-- **Opinión y actualidad: **normativa educativa, políticas de FP y debates que nos afectan, siempre con fuentes contrastadas.
+- **Opinión y actualidad:** normativa educativa, políticas de FP y debates que nos afectan, siempre con fuentes contrastadas.
 - **Reseñas**: libros, recursos y herramientas que nos han servido (o no). 
 
 ### Para quién escribimos
