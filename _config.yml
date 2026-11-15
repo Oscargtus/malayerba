@@ -36,7 +36,7 @@ perfil:
 
 # Texto del pie de página
 pie:
-  texto: Breve descripción de Plantopia para el pie de página. Texto de ejemplo para reemplazar.
+  texto: "Plantopia es una revista digital sobre educación e innovación, con la mirada en la FP, la sostenibilidad y el medio rural."
 
 # ---------- Ajustes técnicos (normalmente no hace falta tocarlos) ----------
 
