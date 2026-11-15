@@ -6644,6 +6644,12 @@ input:focus-visible,
 	color: #2a2d34;
 }
 
+/* Negritas (**texto**) en tono oscuro para que resalten sobre el texto gris (todos los artículos y páginas) */
+.cuerpo-articulo strong,
+.cuerpo-articulo b {
+	color: #2a2d34;
+}
+
 /* Sobre nosotros: equipo */
 .equipo,
 .cuerpo-articulo .equipo {

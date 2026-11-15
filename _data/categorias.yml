@@ -8,17 +8,17 @@
 #   2. copia categoria-1.html como categoria-<id>.html y cambia "categoria:" y "title:" dentro
 
 - id: "1"
-  nombre: Categoría 1
+  nombre: Editorial
   descripcion: Descripción breve de la categoría 1.
 
 - id: "2"
-  nombre: Categoría 2
+  nombre: La Noticia
   descripcion: Descripción breve de la categoría 2.
 
 - id: "3"
-  nombre: Categoría 3
+  nombre: La Entrevista
   descripcion: Descripción breve de la categoría 3.
 
 - id: "4"
-  nombre: Categoría 4
+  nombre: Investigación
   descripcion: Descripción breve de la categoría 4.
