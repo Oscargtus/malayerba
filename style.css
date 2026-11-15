@@ -6648,3 +6648,114 @@ input:focus-visible,
 		transition: background 0.5s ease-in-out;
 	}
 }
+
+/*==================================================================
+  malayerba: menú en móvil (< 768 px)
+  - Sección activa: texto amarillo + barra amarilla a la izquierda (sin el gris de Bootstrap)
+  - Hover / foco con teclado: texto amarillo, barra que aparece y leve desplazamiento
+  - Las secciones (categorías) siempre visibles: en pantallas táctiles no hay "hover"
+==================================================================*/
+@media (max-width: 767px) {
+	#nav .navbar-collapse {
+		background: #2a2d34;
+		border-top: 0;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+	}
+
+	#nav.navbar-default .navbar-nav {
+		margin: 0;
+		padding: 6px 0;
+	}
+
+	#nav.navbar-default .navbar-nav > li + li {
+		border-top: 1px solid rgba(255, 255, 255, .07);
+	}
+
+	/* Enlaces principales y de secciones */
+	#nav.navbar-default .navbar-nav > li > a,
+	#nav.navbar-default .navbar-nav .drop a {
+		display: block;
+		min-height: 44px;
+		padding: 13px 20px;
+		color: #fff;
+		background: transparent;
+		box-shadow: inset 0 0 0 transparent;
+		transition: color .2s ease, background-color .2s ease, box-shadow .2s ease, padding-left .2s ease;
+	}
+
+	#nav.navbar-default .navbar-nav > li > a:after,
+	#nav.navbar-default .navbar-nav .drop a:after {
+		display: none;
+	}
+
+	/* Hover y foco */
+	#nav.navbar-default .navbar-nav > li > a:hover,
+	#nav.navbar-default .navbar-nav > li > a:focus-visible,
+	#nav.navbar-default .navbar-nav .drop a:hover,
+	#nav.navbar-default .navbar-nav .drop a:focus-visible {
+		color: #f5ab35;
+		background: rgba(255, 255, 255, .05);
+		box-shadow: inset 3px 0 0 #f5ab35;
+		padding-left: 26px;
+		outline: none;
+	}
+
+	/* Sección / página actual */
+	#nav.navbar-default .navbar-nav > li.active > a,
+	#nav.navbar-default .navbar-nav > li.active > a:hover,
+	#nav.navbar-default .navbar-nav > li.active > a:focus,
+	#nav.navbar-default .navbar-nav .drop li.active > a {
+		color: #f5ab35;
+		background: rgba(255, 255, 255, .07);
+		box-shadow: inset 4px 0 0 #f5ab35;
+	}
+
+	/* Submenú de secciones: siempre abierto, sangrado y más discreto */
+	#nav .menu-secciones > .drop,
+	#nav .menu-secciones:hover > .drop {
+		position: static;
+		max-height: none;
+		width: auto;
+		margin: 0;
+		padding: 0 0 6px;
+		background: transparent;
+		box-shadow: none;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	#nav .menu-secciones > .drop ul {
+		margin: 0;
+		padding: 0;
+		background: transparent;
+	}
+
+	#nav.navbar-default .navbar-nav .drop li {
+		margin: 0;
+		border: 0;
+	}
+
+	#nav.navbar-default .navbar-nav .drop a {
+		min-height: 40px;
+		padding: 10px 20px 10px 40px;
+		font-size: 14px;
+		color: rgba(255, 255, 255, .78);
+		text-transform: none;
+	}
+
+	#nav.navbar-default .navbar-nav .drop a:before {
+		content: "";
+		display: inline-block;
+		width: 10px;
+		height: 1px;
+		margin: 0 10px 0 0;
+		vertical-align: middle;
+		background: currentColor;
+		opacity: .6;
+	}
+
+	#nav.navbar-default .navbar-nav .drop a:hover,
+	#nav.navbar-default .navbar-nav .drop a:focus-visible {
+		padding-left: 46px;
+	}
+}

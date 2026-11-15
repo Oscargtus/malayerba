@@ -10,13 +10,14 @@
 		{%- if item.url == actual %}{% assign activo = true %}{% endif -%}
 		{%- if page.layout == "articulo" and item.url == "archivo.html" %}{% assign activo = true %}{% endif -%}
 	{%- endif %}
-	<li{% if activo %} class="active"{% endif %}{% if item.categorias %} data-drop="drop-right"{% endif %}>
-		<a href="{{ item.url }}">{{ item.titulo }}</a>
+	<li class="{% if activo %}active{% endif %}{% if item.categorias %} menu-secciones{% endif %}"{% if item.categorias %} data-drop="drop-right"{% endif %}>
+		<a href="{{ item.url }}"{% if activo and item.url == actual %} aria-current="page"{% endif %}>{{ item.titulo }}</a>
 		{%- if item.categorias %}
 		<div class="drop">
 			<ul>
 			{%- for cat in site.data.categorias %}
-				<li><a href="categoria-{{ cat.id }}.html">{{ cat.nombre }}</a></li>
+				{%- capture url_cat %}categoria-{{ cat.id }}.html{% endcapture %}
+				<li{% if url_cat == actual %} class="active"{% endif %}><a href="{{ url_cat }}"{% if url_cat == actual %} aria-current="page"{% endif %}>{{ cat.nombre }}</a></li>
 			{%- endfor %}
 			</ul>
 		</div>
