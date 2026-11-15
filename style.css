@@ -6759,3 +6759,11 @@ input:focus-visible,
 		padding-left: 46px;
 	}
 }
+
+/* Móvil: se oculta el botón del panel lateral (perfil) para no tener dos íconos ☰ juntos.
+   El menú principal sigue en su botón; en pantallas grandes el panel sigue disponible. */
+@media (max-width: 767px) {
+	#nav .icon-menu {
+		display: none;
+	}
+}
