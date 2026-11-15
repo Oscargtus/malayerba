@@ -1,6 +1,10 @@
 # Inventario de imágenes – Plantopia (Jekyll)
 
-Todas las imágenes son **placeholders** en `assets/placeholders/`, con su nombre y tamaño escritos dentro (excepto el logo de Plantopia, que está en `assets/marca/`).
+Las imágenes de `assets/placeholders/` son **placeholders**, con su nombre y tamaño escritos dentro. Excepciones, que ya son definitivas:
+
+- El logo de Plantopia, en `assets/marca/`.
+- Los avatares IMG-AVATAR-01 a 04.
+- El banner IMG-BG-01.
 Para reemplazar una: guarda tu imagen con **exactamente el mismo nombre** (mayúsculas incluidas) y sobrescribe el archivo.
 
 Para **artículos nuevos** puedes crear tus propias imágenes en otra carpeta (por ejemplo `assets/fotos/`) y
@@ -29,11 +33,11 @@ portada, tarjetas anchas de video/galería). Deja lo importante de la foto cerca
 |---|---|---|---|
 | assets/marca/plantopia-logo.webp | `_includes/marca.html` | 164×240 (fondo transparente) | Logo de Plantopia junto a la edición (`_config.yml` → `edicion`). Altura: `--logo-size` en `style.css` (56 px; 44 px en móvil). En la portada lleva una placa blanca |
 | assets/marca/plantopia-favicon.png, plantopia-apple-touch.png | `_includes/head.html` | 64×64 y 180×180 | Ícono de la pestaña y del acceso directo en móviles |
-| IMG-AVATAR-01.jpg | `_config.yml` → `perfil.imagen` | 180×180 | Perfil de la revista en la barra lateral (se ve en círculo) |
-| IMG-AVATAR-02.jpg | `_config.yml` → `perfil.imagen_menu_lateral` | 215×215 | Perfil en el panel lateral (botón ☰) |
-| IMG-AVATAR-03.jpg, IMG-AVATAR-04.jpg | `_data/autores.yml` → `foto` | 270×270 | Fotos de autores (caja del artículo y equipo en "Sobre nosotros") |
+| IMG-AVATAR-01.jpg | `_config.yml` → `perfil.imagen` | 180×180 (exportado a 360×360 para pantallas Retina) | Perfil de la revista en la barra lateral (se ve en círculo). **Ya es definitivo:** logo de Plantopia sobre blanco, al ~70 % para que quepa en el círculo |
+| IMG-AVATAR-02.jpg | `_config.yml` → `perfil.imagen_menu_lateral` | 215×215 (exportado a 430×430) | Perfil en el panel lateral (botón ☰). **Ya es definitivo:** logo de Plantopia sobre blanco |
+| IMG-AVATAR-03.jpg, IMG-AVATAR-04.jpg | `_data/autores.yml` → `foto` | 270×270 | Fotos de autores (caja del artículo y equipo en "Sobre nosotros"). **Ya son definitivas:** 03 = Oscar A. Rodríguez (`autor-1`), 04 = Emac (`autor-2`) |
 | IMG-BANNER-01.jpg | `_includes/barra-lateral.html` | 370×415 | Espacio publicitario de la barra lateral |
-| IMG-BG-01.jpg | `_layouts/interior.html` (o `imagen_cabecera:` en cada página) | 1920×200 | Fondo de la cabecera de páginas interiores |
+| IMG-BG-01.jpg | `_layouts/interior.html` (o `imagen_cabecera:` en cada página) | 1920×200 | Fondo de la franja del título en todas las páginas interiores (artículos, categorías, Sobre nosotros, archivo, 404). **Ya es definitivo** |
 | IMG-GALLERY-01.jpg … IMG-GALLERY-09.jpg | `_data/galeria.yml` | 275×240 | Franja de imágenes antes del pie |
 
 ## Fondos en CSS (`style.css`)
