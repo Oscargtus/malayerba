@@ -38,7 +38,7 @@ portada, tarjetas anchas de video/galería). Deja lo importante de la foto cerca
 | IMG-AVATAR-03.jpg, IMG-AVATAR-04.jpg | `_data/autores.yml` → `foto` | 270×270 | Fotos de autores (caja del artículo y equipo en "Sobre nosotros"). **Ya son definitivas:** 03 = Oscar A. Rodríguez (`autor-1`), 04 = Emac (`autor-2`) |
 | IMG-BANNER-01.jpg | `_includes/barra-lateral.html` | 370×415 | Espacio publicitario de la barra lateral |
 | IMG-BG-01.jpg | `_layouts/interior.html` (o `imagen_cabecera:` en cada página) | 1920×200 | Fondo de la franja del título en todas las páginas interiores (artículos, categorías, Sobre nosotros, archivo, 404). **Ya es definitivo** |
-| IMG-GALLERY-01.jpg … IMG-GALLERY-09.jpg | `_data/galeria.yml` | 275×240 | Franja de imágenes antes del pie |
+| IMG-GALLERY-01.jpg … IMG-GALLERY-12.jpg | `_data/galeria.yml` | 275×240 | Franja de imágenes antes del pie. **Ya son definitivas.** Para añadir otra, súbela con el número siguiente y añade su bloque en `galeria.yml` |
 
 ## Fondos en CSS (`style.css`)
 
