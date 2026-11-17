@@ -4,7 +4,7 @@
 {%- endcomment -%}
 {%- assign redes_activas = site.data.redes | where_exp: "r", "r.url != ''" -%}
 {%- if redes_activas.size > 0 %}
-<ul class="social-networks{% if include.clase %} {{ include.clase }}{% endif %}">
+<ul class="social-networks{% if include.clase %} {{ include.clase }}{% endif %}{% if redes_activas.size == 1 %} una-red{% endif %}">
 {%- for red in redes_activas %}
 	<li><a href="{{ red.url }}" aria-label="{{ red.nombre }}"><span class="{{ include.icono_clase }}ico-{{ red.icono }}"></span></a></li>
 {%- endfor %}

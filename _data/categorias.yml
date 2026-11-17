@@ -9,16 +9,16 @@
 
 - id: "1"
   nombre: Editorial
-  descripcion: Descripción breve de la categoría 1.
+  descripcion: "La voz de la revista: presentaciones y reflexiones de Plantopia sobre la educación."
 
 - id: "2"
   nombre: La Noticia
-  descripcion: Descripción breve de la categoría 2.
+  descripcion: "Novedades y actualidad de la Formación Profesional y de Plantopia."
 
 - id: "3"
   nombre: La Entrevista
-  descripcion: Descripción breve de la categoría 3.
+  descripcion: "Conversaciones con las personas que hacen la Formación Profesional."
 
 - id: "4"
   nombre: Investigación
-  descripcion: Descripción breve de la categoría 4.
+  descripcion: "Oficios, técnicas y saberes explorados a fondo."

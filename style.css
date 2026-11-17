@@ -316,6 +316,11 @@ h6 a,
 	vertical-align: top;
 }
 
+/* malayerba: con una sola red, el icono va centrado en vez de pegado a la izquierda */
+.widget .social-networks.justify.una-red {
+	text-align: center;
+}
+
 .ellipsis {
 	white-space: nowrap; /* 1 */
 	text-overflow: ellipsis; /* 2 */
@@ -966,6 +971,12 @@ img.aligncenter {
 
 .ico-facebook:before {
 	content: "\e909";
+}
+
+/* malayerba: icono de YouTube (la fuente icomoon no lo trae; se usa Font Awesome 4, ya incluido) */
+.ico-youtube:before {
+	font-family: "FontAwesome" !important;
+	content: "\f16a";
 }
 
 .ico-arrow-up:before {
@@ -2545,6 +2556,25 @@ h2 {
 	display: inline-block;
 	vertical-align: top;
 	max-width: 100%;
+}
+
+/* malayerba: cinta "Próximamente · Edición 2027" sobre el banner del Cuaderno del Profesor */
+.widget.promo-widget .promo-proximamente { position: relative; }
+.widget.promo-widget .promo-cinta {
+	position: absolute; left: 0; right: 0; bottom: 0;
+	padding: 12px 10px 14px;
+	background: rgba(42, 45, 52, 0.85);
+	color: #fff;
+	font: 600 20px/1.2 "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+}
+.widget.promo-widget .promo-cinta small {
+	display: block;
+	margin-bottom: 3px;
+	color: #27ae60;
+	font-size: 12px;
+	letter-spacing: 2px;
 }
 
 .widget.promo-widget:before {

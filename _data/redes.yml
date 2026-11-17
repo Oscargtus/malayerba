@@ -1,6 +1,10 @@
 # Redes sociales (se muestran en header, pie, perfil y contacto).
 # Pon en "url" el enlace real. Mientras "url" esté vacío, ese ícono NO se muestra.
-# icono: facebook, twitter, linkedin, pinterest (íconos incluidos en la plantilla)
+# icono: facebook, twitter, linkedin, pinterest, youtube
+
+- nombre: YouTube
+  icono: youtube
+  url: "https://www.youtube.com/@Plantopia-es"
 
 - nombre: Facebook
   icono: facebook

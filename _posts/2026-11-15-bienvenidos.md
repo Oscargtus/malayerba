@@ -10,7 +10,6 @@ destacado: true
 imagen_portada: assets/placeholders/IMG-HERO-01.jpg
 ---
 
-*Plantopia* es un canal de difusión sobre educación e innovación. Miramos sobre todo a la Formación Profesional (FP), a la sostenibilidad y al medio natural y rural, pero no cerramos la puerta a nada que ayude a pensar la escuela que queremos.
 ## Plantopia: sembrar ideas para educar
 
 > *Plantopia* quiere ser el lugar donde esas historias quedan escritas. Lo que se escribe se puede compartir, discutir, mejorar y, por qué no, copiar.
@@ -21,13 +20,13 @@ Toda planta empieza por una semilla que alguien decide enterrar sin saber muy bi
 
 ### Por qué nace
 
-En las aulas de FP pasan cosas extraordinarias que casi nunca salen de ellas. Un grupo recoge aceitunas, las cura, las cata y se presenta a un concurso. Otro curso instala colmenas y obtiene su propia miel.Esas experiencias se cuentan en el pasillo, en un claustro o en una foto del móvil, y después se olvidan.
+En las aulas de FP pasan cosas extraordinarias que casi nunca salen de ellas. Un grupo recoge aceitunas, las cura, las cata y se presenta a un concurso. Otro curso instala colmenas y obtiene su propia miel. Esas experiencias se cuentan en el pasillo, en un claustro o en una foto del móvil, y después se olvidan.
 
 *Plantopia* quiere ser el lugar donde esas historias quedan escritas. Lo que se escribe se puede compartir, discutir, mejorar y, por qué no, copiar.
 
 También nace de una convicción: la FP agraria y el medio natural y rural tienen mucho que decir sobre los grandes retos de nuestro tiempo, como la alimentación, el clima, la despoblación o el empleo. Y, sin embargo, rara vez ocupan el centro de la conversación educativa. Nosotros queremos ponerlos ahí.
 
-### Que vas a encontrar
+### Qué vas a encontrar
 
 - **Experiencias de aula:** proyectos reales contados paso a paso, con sus aciertos y sus tropiezos, para que cualquiera pueda replicarlos.
 - **Divulgación:** conceptos que parecen complejos, de la fermentación al suelo vivo, explicados sin jerga.
