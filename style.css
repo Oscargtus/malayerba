@@ -6596,6 +6596,16 @@ input:focus-visible,
 	text-transform: none;
 }
 
+/* Hero de la portada: todas las diapositivas igual de altas que la más alta
+   (si un título ocupa 2 líneas, las demás no dejan una franja blanca debajo) */
+.slideshow .slick-track {
+	display: flex;
+}
+
+.slideshow .slick-slide {
+	height: auto;
+}
+
 /* Las imágenes de artículo son 3:2; en cajas de otra proporción se recortan al centro */
 .switcher .img-holder img.miniatura-destacado {
 	height: 140px;
