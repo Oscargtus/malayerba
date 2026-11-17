@@ -6869,3 +6869,21 @@ input:focus-visible,
 		display: none;
 	}
 }
+
+/* malayerba: pie de página
+   1) Desde 1230 px las 4 columnas sumaban el 102 % y "Secciones" bajaba a otra fila:
+      se reparten los anchos para que quepan en una sola fila.
+   2) Los títulos de las columnas ("Enlaces importantes", "Lo último", "Secciones") bajan
+      para que su línea base coincida con la del nombre de la edición junto al logo.
+      La marca (logo + nombre + curso) no se toca. En móvil (< 640 px, columnas apiladas) no se aplica. */
+@media (min-width: 1230px) {
+	#wrapper .aside .col.footer-nav { width: 22.5%; }
+	#wrapper .aside .col.widget-holder { width: 27.5%; }
+}
+@media (min-width: 640px) {
+	#wrapper .aside .col h3 { margin-top: var(--pie-ajuste-titulos, 0px); }
+}
+/* Ajuste medido en cada tramo (depende del tamaño del logo y del nombre) */
+@media (min-width: 768px)  { :root { --pie-ajuste-titulos: 8px; } }
+@media (min-width: 992px)  { :root { --pie-ajuste-titulos: 11px; } }
+@media (min-width: 1230px) { :root { --pie-ajuste-titulos: 8px; } }
