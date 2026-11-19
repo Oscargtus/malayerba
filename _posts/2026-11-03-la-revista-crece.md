@@ -2,12 +2,12 @@
 title: "La revista crece: edición trimestral y nuevo podcast"
 categoria: "2"
 autor: autor-2
-imagen: assets/placeholders/IMG-POST-02.jpg
+imagen: assets/fotos/la-revista-crece.jpg
 imagen_alt: "Estudiantes y un profesor de FP conversan alrededor de una mesa mientras graban un podcast"
 extracto: "Plantopia se publicará cada tres meses y prepara un podcast en el que estudiantes y profesores de FP conversarán sobre lo que se aprende en las aulas."
 etiquetas: [Formación Profesional, Podcast, Novedades]
 destacado: true
-imagen_portada: assets/placeholders/IMG-HERO-02.jpg
+imagen_portada: assets/portadas/la-revista-crece.jpg
 ---
 
 La Formación Profesional está en constante evolución. Nuevas tecnologías, experiencias educativas, proyectos y oportunidades profesionales forman parte de una realidad que merece ser conocida, compartida y debatida. Por eso Plantopia da un paso más: **publicaciones trimestrales y un nuevo espacio de podcast**.

@@ -18,14 +18,14 @@ portada, tarjetas anchas de video/galería). Deja lo importante de la foto cerca
 
 | Placeholder | Dónde se usa | Tamaño ideal | Notas |
 |---|---|---|---|
-| IMG-POST-01.jpg … IMG-POST-04.jpg | campo `imagen:` de los 4 artículos de ejemplo (`_posts/`, uno por sección) | 1200×800 (3:2) | Tarjeta, artículo, relacionados, miniaturas, buscador |
+| IMG-POST-01.jpg | sin uso (los artículos ya tienen foto propia) | 1200×800 (3:2) | Las fotos de artículo están en **`assets/fotos/`** (la carpeta de Pages CMS), con el nombre del artículo |
 | IMG-POST-12.jpg | `sobre-nosotros.md` (`imagen:`) | 1200×800 (3:2) | Imagen principal de "Sobre nosotros" |
 
 ## Portada
 
 | Placeholder | Dónde se usa | Tamaño ideal | Notas |
 |---|---|---|---|
-| IMG-HERO-01.jpg … IMG-HERO-04.jpg | `imagen_portada:` de los 4 artículos de ejemplo (todos destacados) | 1920×845 | Fondo del slideshow; el título va encima (usa una imagen oscura o suave) |
+| (portadas) | `imagen_portada:` de los artículos destacados | 1920×845 | Están en **`assets/portadas/`** (la carpeta de portadas de Pages CMS), con el nombre del artículo. Fondo del slideshow; el título va encima (usa una imagen oscura o suave) |
 
 ## Compartidas en todo el sitio
 

@@ -1,0 +1,114 @@
+# ==========================================================
+#  Pages CMS – editor web de la revista (https://app.pagescms.org)
+#  Documentación: https://pagescms.org/docs/configuration/
+#
+#  Para añadir un AUTOR o una CATEGORÍA hay que tocarlo en dos sitios:
+#  _data/autores.yml (o _data/categorias.yml) y la lista "values" de abajo.
+#  Más detalles en LEEME.md → "Editar con Pages CMS".
+# ==========================================================
+
+# Dónde se guardan las fotos que se suben desde el editor.
+# input y output son iguales y SIN barra inicial: en el artículo queda
+# "assets/fotos/archivo.jpg", porque el sitio usa siempre rutas relativas.
+media:
+  - name: fotos
+    label: Fotos de artículos
+    input: assets/fotos
+    output: assets/fotos
+    extensions: [jpg, jpeg]
+    rename: safe          # minúsculas, sin espacios ni acentos
+  - name: portadas
+    label: Portadas del carrusel
+    input: assets/portadas
+    output: assets/portadas
+    extensions: [jpg, jpeg]
+    rename: safe
+
+settings:
+  content:
+    merge: true           # conserva los datos que no salen en el formulario (vídeo, galería…)
+  commit:
+    identity: user        # los cambios quedan con el nombre de quien edita
+
+content:
+  - name: articulos
+    label: Artículos
+    description: Los artículos de la revista. Al guardar, se publican en la web en 1–2 minutos.
+    type: collection
+    path: _posts
+    filename: "{year}-{month}-{day}-{primary}.md"
+    operations:
+      create: true
+      rename: false       # la dirección del artículo no cambia
+      delete: false       # para borrar un artículo, pídeselo a Oscar
+    view:
+      primary: title
+      fields: [title, categoria, autor]
+      search: [title, extracto]
+    fields:
+      - name: title
+        label: Título
+        type: string
+        required: true
+        description: Corto y atractivo. Con él se crea la dirección del artículo.
+
+      - name: categoria
+        label: Sección
+        type: select
+        required: true
+        options:
+          values:
+            - { value: "1", label: Editorial }
+            - { value: "2", label: La Noticia }
+            - { value: "3", label: La Entrevista }
+            - { value: "4", label: Investigación }
+
+      - name: autor
+        label: Autor/a
+        type: select
+        required: true
+        options:
+          values:
+            - { value: autor-1, label: Oscar A. Rodríguez }
+            - { value: autor-2, label: Emac }
+
+      - name: imagen
+        label: Foto principal
+        type: image
+        required: true
+        description: Horizontal y en JPG. Mejor recortada a 3:2. Se reduce sola al publicar.
+        options:
+          media: fotos
+
+      - name: imagen_alt
+        label: Descripción de la foto
+        type: string
+        description: Qué se ve en la foto (para personas que no pueden verla).
+
+      - name: extracto
+        label: Resumen
+        type: text
+        description: Una o dos frases. Aparece en la portada y en los buscadores.
+
+      - name: etiquetas
+        label: Etiquetas
+        type: string
+        list: true
+        description: Entre 2 y 4 palabras clave.
+
+      - name: destacado
+        label: Mostrar en el carrusel de la portada
+        type: boolean
+
+      - name: imagen_portada
+        label: Imagen del carrusel
+        type: image
+        description: Opcional. Horizontal y muy ancha (1920 × 845). Si la dejas vacía, se usa la foto principal.
+        options:
+          media: portadas
+
+      - name: body
+        label: Texto del artículo
+        type: rich-text
+        options:
+          format: markdown

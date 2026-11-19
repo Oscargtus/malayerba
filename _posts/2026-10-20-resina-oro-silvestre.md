@@ -2,12 +2,12 @@
 title: "Resina: el oro silvestre de nuestros pinares"
 categoria: "4"
 autor: autor-2
-imagen: assets/placeholders/IMG-POST-04.jpg
+imagen: assets/fotos/resina-oro-silvestre.jpg
 imagen_alt: "El resinero Vicente Bádenas y Eva María junto a un pino con la corteza abierta para extraer resina"
 extracto: "Investigamos la resinación, un oficio milenario que convierte la savia del pino en un recurso renovable y que hoy busca nuevas manos para seguir vivo."
 etiquetas: [Resinación, Pino resinero, Oficios forestales]
 destacado: true
-imagen_portada: assets/placeholders/IMG-HERO-04.jpg
+imagen_portada: assets/portadas/resina-oro-silvestre.jpg
 formato: video
 video: https://www.youtube-nocookie.com/embed/tWZK_m7kMic
 ---

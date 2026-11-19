@@ -1,7 +1,8 @@
 # Plantopia – revista digital (proyecto `malayerba`, versión Jekyll)
 
 La editora es **Plantopia**; cada curso la revista tiene una **edición** (2026-2027: *CES Jaume I de Picassent*).
-El repositorio y la dirección web siguen llamándose `malayerba`.
+El repositorio se llama `Oscargtus/plantopia` y la web está en https://oscargtus.github.io/plantopia/
+(antes se llamaba `malayerba`; la carpeta local sigue siendo `malayerba-jekyll`).
 
 Escribes los artículos en **Markdown** (texto simple) y Jekyll arma el sitio completo: portada,
 secciones, archivo, artículos relacionados, buscador, RSS y sitemap.
@@ -154,7 +155,7 @@ y que todas las rutas sean relativas. Si algo falla, te dice el archivo y la lí
 
 ### En GitHub Pages (recomendado)
 
-El sitio está publicado en **https://oscargtus.github.io/malayerba/** (repositorio `Oscargtus/malayerba`).
+El sitio está publicado en **https://oscargtus.github.io/plantopia/** (repositorio `Oscargtus/plantopia`).
 Esta carpeta ya está conectada al repositorio, así que para publicar cambios basta con:
 
 ```bash
@@ -174,6 +175,39 @@ En 1–2 minutos el sitio se actualiza; si algo falla, mira la pestaña *Actions
 1. Pon la dirección final en `_config.yml` → `url:`.
 2. Ejecuta `./tools/compilar.sh`.
 3. Sube **el contenido de `_site/`** (no la carpeta del proyecto) a tu hosting por FTP. Repite cada vez que cambies algo.
+
+## Editar con Pages CMS (desde el iPad o cualquier navegador)
+
+[Pages CMS](https://app.pagescms.org) es una web que edita los artículos directamente en GitHub, sin instalar nada.
+Su configuración está en **`.pages.yml`** (en la raíz de esta carpeta).
+
+**Cómo entrar**
+- **Tú (dueño del repositorio):** entra en https://app.pagescms.org con tu cuenta de GitHub y abre `Oscargtus/plantopia`.
+- **Una colaboradora sin GitHub:** en Pages CMS, dentro del repositorio, abre *Collaborators* e invítala con su correo.
+  Ella abre el enlace del correo en Safari y, en el iPad, puede añadirlo a la pantalla de inicio (*Compartir → Añadir a pantalla de inicio*).
+  Puede crear y editar artículos y subir fotos; no puede borrar ni renombrar artículos ni cambiar la configuración.
+
+**Cómo funciona**
+- *Artículos → Add an entry* crea un artículo. Al pulsar **Save** se publica: la web se actualiza en 1–2 minutos.
+- La foto principal se sube desde el propio formulario (mejor horizontal y recortada a 3:2 en la app Fotos).
+  Se guarda en `assets/fotos/` con un nombre seguro (minúsculas, sin espacios ni acentos).
+- **"Mostrar en el carrusel"** lo pone en el slideshow de la portada; la *Imagen del carrusel* (1920 × 845) es opcional
+  y se guarda en `assets/portadas/`.
+- Las fotos se **reducen solas** después de guardar (1600 px en `fotos`, 1920 px en `portadas`) y se les quitan los
+  metadatos, incluida la ubicación GPS. Lo hace la acción `.github/workflows/reducir-fotos.yml` (pestaña *Actions*).
+- El vídeo (`formato`, `video`) y la galería no salen en el formulario: añádelos tú en el `.md`. Pages CMS los conserva al editar.
+
+**Añadir un autor** (dos sitios):
+1. `_data/autores.yml`: un bloque nuevo con `id` (p. ej. `autor-3`), nombre, bio y foto, como los demás.
+2. `.pages.yml`: en el campo `autor`, añade `- { value: autor-3, label: Nombre visible }` a la lista `values`.
+
+**Añadir una categoría** (dos sitios + una página):
+1. `_data/categorias.yml` y una página `categoria-<id>.html`, como se explica en *Paso 4*.
+2. `.pages.yml`: en el campo `categoria`, añade `- { value: "5", label: Nombre }` (el número entre comillas).
+
+`./tools/compilar.sh` avisa si `_data` y `.pages.yml` no coinciden, o si un artículo no encaja en el formulario
+(lo comprueba `tools/verificar-cms.rb`). Después, publica con `./tools/publicar.sh`. Como la colaboradora también publica desde
+Pages CMS, `publicar.sh` trae primero sus cambios antes de subir los tuyos.
 
 ## Si algo no se ve bien
 

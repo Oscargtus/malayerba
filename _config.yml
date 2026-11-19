@@ -18,8 +18,8 @@ lang: es
 # Dirección pública del sitio, SIN barra final. Hace falta para el RSS, el sitemap
 # y las vistas previas en redes. Ejemplos:
 #   url: "https://www.malayerba.com"
-#   url: "https://usuario.github.io/malayerba"
-url: "https://oscargtus.github.io/malayerba"
+#   url: "https://usuario.github.io/plantopia"
+url: "https://oscargtus.github.io/plantopia"
 # No se usa (todas las rutas son relativas). Déjalo vacío.
 baseurl: ""
 
@@ -73,6 +73,7 @@ exclude:
   - .bundle
   - .jekyll-cache
   - tools
+  - plantillas
   - LEEME.md
   - IMAGENES.md
   - README.md

@@ -1,0 +1,63 @@
+# Cuando se sube una foto a assets/fotos o assets/portadas (por ejemplo desde Pages CMS en el iPad),
+# la reduce al tamaño de la web y le quita los metadatos (ubicación GPS incluida).
+# El trabajo lo hace tools/reducir-fotos.py.
+name: Reducir fotos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assets/fotos/**"
+      - "assets/portadas/**"
+
+permissions:
+  contents: write   # para guardar las fotos reducidas
+  pages: write      # para pedir que la web se vuelva a compilar
+
+concurrency:
+  group: reducir-fotos
+  cancel-in-progress: false
+
+jobs:
+  reducir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar Pillow
+        run: pip install pillow
+
+      - name: Reducir las fotos nuevas o cambiadas en este envío
+        env:
+          ANTES: ${{ github.event.before }}
+        run: |
+          if [ -z "$ANTES" ] || [ "$ANTES" = "0000000000000000000000000000000000000000" ]; then
+            git show --name-only --diff-filter=AM --format= -z HEAD -- assets/fotos assets/portadas > cambiadas.bin
+          else
+            git diff --name-only --diff-filter=AM -z "$ANTES" HEAD -- assets/fotos assets/portadas > cambiadas.bin
+          fi
+          xargs -0 -r python tools/reducir-fotos.py < cambiadas.bin
+          rm cambiadas.bin
+
+      - name: Guardar y volver a compilar la web
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -z "$(git status --porcelain -- assets/fotos assets/portadas)" ]; then
+            echo "No había fotos que reducir."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/fotos assets/portadas
+          git commit -m "Fotos reducidas automáticamente"
+          git pull --rebase
+          git push
+          # Un push hecho por esta acción puede no lanzar la compilación de GitHub Pages: se pide aquí.
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "No se pudo pedir la compilación; se hará en el próximo cambio."

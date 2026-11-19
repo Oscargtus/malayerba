@@ -7,7 +7,7 @@
 #
 # Ejemplos:
 #   ./tools/preparar-foto.sh ~/Desktop/IMG_4521.HEIC assets/fotos/la-ciudad.jpg
-#   ./tools/preparar-foto.sh ~/Desktop/portada.png  assets/placeholders/IMG-HERO-01.jpg 1920
+#   ./tools/preparar-foto.sh ~/Desktop/portada.png  assets/portadas/mi-portada.jpg 1920
 #
 # ANCHO (opcional): ancho máximo en píxeles. Por defecto 1600. La proporción no cambia.
 set -e

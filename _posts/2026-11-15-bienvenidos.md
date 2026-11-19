@@ -7,7 +7,7 @@ imagen_alt: "Libro abierto sobre el fondo de un bosque"
 extracto: "Bienvenidos a esta nuestra Revista Digital para el curso lectivo 2026-2027 en CES Jaume I de Picassent."
 etiquetas: [Educación, Innovación]
 destacado: true
-imagen_portada: assets/placeholders/IMG-HERO-01.jpg
+imagen_portada: assets/portadas/bienvenidos.jpg
 ---
 
 ## Plantopia: sembrar ideas para educar
