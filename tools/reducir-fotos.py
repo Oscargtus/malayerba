@@ -1,4 +1,4 @@
-"""Reduce y limpia las fotos subidas desde Pages CMS (las usa .github/workflows/reducir-fotos.yml).
+"""Reduce y limpia las fotos subidas desde Pages CMS (lo usa .github/workflows/ajustes-automaticos.yml).
 
 Uso:  python tools/reducir-fotos.py ARCHIVO [ARCHIVO ...]
 

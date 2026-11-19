@@ -194,7 +194,10 @@ Su configuración está en **`.pages.yml`** (en la raíz de esta carpeta).
 - **"Mostrar en el carrusel"** lo pone en el slideshow de la portada; la *Imagen del carrusel* (1920 × 845) es opcional
   y se guarda en `assets/portadas/`.
 - Las fotos se **reducen solas** después de guardar (1600 px en `fotos`, 1920 px en `portadas`) y se les quitan los
-  metadatos, incluida la ubicación GPS. Lo hace la acción `.github/workflows/reducir-fotos.yml` (pestaña *Actions*).
+  metadatos, incluida la ubicación GPS. Lo hace la acción `.github/workflows/ajustes-automaticos.yml` (pestaña *Actions*).
+- **Subrayado:** el editor lo guarda como `++texto++`, que Jekyll no entiende. La misma acción lo convierte en
+  `<u markdown="span">texto</u>` (subrayado real, que respeta la negrita y la cursiva de dentro) unos segundos después de guardar.
+  Si se vuelve a editar el artículo en Pages CMS, sigue apareciendo subrayado.
 - El vídeo (`formato`, `video`) y la galería no salen en el formulario: añádelos tú en el `.md`. Pages CMS los conserva al editar.
 
 **Añadir un autor** (dos sitios):

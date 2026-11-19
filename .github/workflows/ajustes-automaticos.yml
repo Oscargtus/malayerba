@@ -1,0 +1,74 @@
+# Ajustes automáticos después de guardar en Pages CMS (o de publicar desde el Mac):
+#  1. Fotos nuevas de assets/fotos y assets/portadas: las reduce al tamaño de la web y les quita
+#     los metadatos, incluida la ubicación GPS (tools/reducir-fotos.py).
+#  2. Artículos de _posts: convierte el subrayado de Pages CMS (++texto++) en subrayado real
+#     <u>texto</u>, que Jekyll sí muestra (tools/convertir-subrayado.py).
+# Si cambió algo, lo guarda en un commit y pide que la web se vuelva a compilar.
+name: Ajustes automáticos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assets/fotos/**"
+      - "assets/portadas/**"
+      - "_posts/**"
+
+permissions:
+  contents: write   # para guardar los ajustes
+  pages: write      # para pedir que la web se vuelva a compilar
+
+concurrency:
+  group: ajustes-automaticos
+  cancel-in-progress: false
+
+jobs:
+  ajustes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar Pillow
+        run: pip install pillow
+
+      - name: Ver qué archivos cambiaron en este envío
+        env:
+          ANTES: ${{ github.event.before }}
+        run: |
+          if [ -z "$ANTES" ] || [ "$ANTES" = "0000000000000000000000000000000000000000" ]; then
+            RANGO="HEAD~1"
+          else
+            RANGO="$ANTES"
+          fi
+          git diff --name-only --diff-filter=AM -z "$RANGO" HEAD -- assets/fotos assets/portadas > fotos.bin
+          git diff --name-only --diff-filter=AM -z "$RANGO" HEAD -- _posts > articulos.bin
+
+      - name: Reducir las fotos nuevas o cambiadas
+        run: xargs -0 -r python tools/reducir-fotos.py < fotos.bin
+
+      - name: Convertir el subrayado de los artículos
+        run: xargs -0 -r python tools/convertir-subrayado.py < articulos.bin
+
+      - name: Guardar y volver a compilar la web
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          rm -f fotos.bin articulos.bin
+          if [ -z "$(git status --porcelain -- assets/fotos assets/portadas _posts)" ]; then
+            echo "No había nada que ajustar."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/fotos assets/portadas _posts
+          git commit -m "Ajustes automáticos (fotos reducidas / subrayado)"
+          git pull --rebase
+          git push
+          # Un push hecho por esta acción puede no lanzar la compilación de GitHub Pages: se pide aquí.
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "No se pudo pedir la compilación; se hará en el próximo cambio."
